@@ -4745,61 +4745,56 @@
 <h4 id="434-mermaid">4.3.4. Архитектурная схема системы (Mermaid)</h4>
 <figure>
 <pre class="mermaid"><code>flowchart TB
-    %% Users
-    U1[Сотрудник подразделения]
-    U2[Исполнитель]
-    U3[Руководитель]
-    U4[Бухгалтерия]
-    C[Клиент (опционально)]
+  U1["Сотрудник подразделения"]
+  U2["Исполнитель"]
+  U3["Руководитель"]
+  U4["Бухгалтерия"]
+  C["Клиент - опционально"]
 
-    %% UI
-    UI[Веб-интерфейс / UI\n(Личный кабинет)]
-    PF[Публичная форма клиента\n(опционально)]
+  UI["Веб-интерфейс / UI&lt;br/&gt;Личный кабинет"]
+  PF["Публичная форма клиента&lt;br/&gt;опционально"]
 
-    %% API Layer
-    API[Сервер приложений / API\nБизнес-логика + RBAC + Валидация]
-    AUTH[Модуль аутентификации\nТокены/Сессии]
-    AUDIT[Журналирование и аудит\n(история действий)]
+  API["Сервер приложений / API&lt;br/&gt;Бизнес-логика + RBAC + Валидация"]
+  AUTH["Модуль аутентификации&lt;br/&gt;Токены / Сессии"]
+  AUDIT["Журналирование и аудит&lt;br/&gt;История действий"]
 
-    %% Data Layer
-    DB[(База данных\nClients/Requests/Status/Users/History)]
-    FS[(Файловое хранилище\nвложений)]
+  DB[("База данных&lt;br/&gt;Clients / Requests / Status / Users / History")]
+  FS[("Файловое хранилище&lt;br/&gt;Вложения")]
 
-    %% Integration Layer
-    NOTIF[Сервис уведомлений\nEmail/Мессенджер/СМС]
-    REPORT[Сервис отчетов\nPDF/Excel Export]
-    ACC[Учетная система/Бухгалтерия\n(опционально)]
+  NOTIF["Сервис уведомлений&lt;br/&gt;Email / Мессенджер / SMS"]
+  REPORT["Сервис отчетов&lt;br/&gt;PDF / Excel"]
+  ACC["Учетная система / Бухгалтерия&lt;br/&gt;опционально"]
 
-    %% Flows
-    U1 --&gt; UI
-    U2 --&gt; UI
-    U3 --&gt; UI
-    U4 --&gt; UI
-    C --&gt; PF
+  U1 --&gt; UI
+  U2 --&gt; UI
+  U3 --&gt; UI
+  U4 --&gt; UI
+  C --&gt; PF
 
-    UI --&gt;|HTTPS| API
-    PF --&gt;|HTTPS| API
+  UI --&gt;|HTTPS| API
+  PF --&gt;|HTTPS| API
 
-    API --&gt; AUTH
-    API --&gt; AUDIT
+  API --&gt; AUTH
+  API --&gt; AUDIT
 
-    API --&gt;|SQL/ORM| DB
-    API --&gt;|Upload/Download| FS
+  API --&gt;|SQL / ORM| DB
+  API --&gt;|Upload / Download| FS
 
-    API --&gt;|TLS/API| NOTIF
-    API --&gt;|Export| REPORT
-    API --&gt;|TLS/API| ACC
+  API --&gt;|TLS / API| NOTIF
+  API --&gt;|Export| REPORT
+  API --&gt;|TLS / API| ACC
 
-    %% Security notes as nodes
-    S1{{Точка безопасности:\nHTTPS + защита токенов}}
-    S2{{Точка безопасности:\nRBAC + валидация + rate limit}}
-    S3{{Точка безопасности:\nправа БД + backup + целостность}}
-    S4{{Точка безопасности:\nTLS + секреты API + минимизация ПДн}}
+  S1{{"HTTPS + защита токенов"}}
+  S2{{"RBAC + валидация + rate limit"}}
+  S3{{"Права БД + backup + целостность"}}
+  S4{{"TLS + секреты API + минимизация ПДн"}}
 
-    UI --- S1
-    API --- S2
-    DB --- S3
-    NOTIF --- S4</code></pre>
+  UI --- S1
+  API --- S2
+  DB --- S3
+  NOTIF --- S4
+
+</code></pre>
 <figcaption>
 <p>Рисунок 8 – Архитектурная схема системы </p>
 </figcaption>
