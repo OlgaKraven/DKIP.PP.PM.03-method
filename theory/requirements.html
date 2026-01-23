@@ -1,0 +1,1206 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="processes.html">
+      
+      
+        <link rel="next" href="design.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Этап 3. Формирование требований к системе - ПП.ПМ.03 Проектирование и разработка информационных систем</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../index.html" title="ПП.ПМ.03 Проектирование и разработка информационных систем" class="md-header__button md-logo" aria-label="ПП.ПМ.03 Проектирование и разработка информационных систем" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ПП.ПМ.03 Проектирование и разработка информационных систем
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Этап 3. Формирование требований к системе
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="ПП.ПМ.03 Проектирование и разработка информационных систем" class="md-nav__button md-logo" aria-label="ПП.ПМ.03 Проектирование и разработка информационных систем" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    ПП.ПМ.03 Проектирование и разработка информационных систем
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../subject_area.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Предметная область
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Теория
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Теория
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="analysis.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Анализ предметной области
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="processes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Анализ процессов и выбор автоматизации
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Формирование требований к системе
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="requirements.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Формирование требований к системе
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Этап 3. Формирование требований к системе
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Этап 3. Формирование требований к системе">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Формирование функциональных требований
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1. Формирование функциональных требований">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.1. Перечень функциональных требований
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Формирование нефункциональных требований
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2. Формирование нефункциональных требований">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.1. Производительность
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.2. Надёжность
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.3. Удобство использования
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.4. Масштабируемость
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#325" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.5. Безопасность
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#326" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.6. Совместимость
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="design.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Проектирование системы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Проектирование
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Этап 3. Формирование требований к системе
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Этап 3. Формирование требований к системе">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Формирование функциональных требований
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1. Формирование функциональных требований">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.1. Перечень функциональных требований
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Формирование нефункциональных требований
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2. Формирование нефункциональных требований">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.1. Производительность
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.2. Надёжность
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.3. Удобство использования
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.4. Масштабируемость
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#325" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.5. Безопасность
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#326" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.6. Совместимость
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">Теория</h1>
+<h2 id="3">Этап 3. Формирование требований к системе</h2>
+<h3 id="31">3.1. Формирование функциональных требований</h3>
+<p>Формирование функциональных требований направлено на определение перечня функций, которые должна обеспечивать разрабатываемая информационная система для автоматизации выбранного процесса. Функциональные требования фиксируют, <strong>что именно должна делать система</strong>, <strong>какой пользователь выполняет действие</strong>, и <strong>какой результат должен быть получен</strong>. Корректно сформулированные требования обеспечивают проверяемость решения на этапе испытаний и служат основой для проектирования модулей, данных и интерфейсов.</p>
+<p>В рамках автоматизации <strong>процесса обработки заявок клиентов</strong> функциональные требования формируются с учетом участников процесса (клиент, сотрудник подразделения, исполнитель, руководитель, бухгалтерия) и информационных объектов (заявка, клиент, статус, сроки, отчеты, финансовые документы).</p>
+<hr>
+<h4 id="311">3.1.1. Перечень функциональных требований</h4>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Функция</th>
+<th>Описание</th>
+<th>Пользователь</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1.1</td>
+<td>Авторизация и вход в систему</td>
+<td>Система должна обеспечивать вход пользователя по учетным данным с учетом роли.</td>
+<td>Все роли</td>
+<td>Пользователь идентифицирован, доступ предоставлен в рамках прав.</td>
+</tr>
+<tr>
+<td>3.1.2</td>
+<td>Управление ролями и правами</td>
+<td>Система должна обеспечивать назначение ролей и ограничение доступа к данным и операциям по ролям.</td>
+<td>Администратор / Руководитель</td>
+<td>Настроены права доступа; доступ к данным ограничен.</td>
+</tr>
+<tr>
+<td>3.1.3</td>
+<td>Создание заявки</td>
+<td>Система должна обеспечивать регистрацию заявки с указанием данных клиента, сути обращения, приоритета и канала поступления.</td>
+<td>Сотрудник подразделения</td>
+<td>Создана заявка с уникальным номером и статусом «Новая».</td>
+</tr>
+<tr>
+<td>3.1.4</td>
+<td>Ведение карточки клиента</td>
+<td>Система должна обеспечивать создание и актуализацию карточки клиента и привязку заявок к клиенту.</td>
+<td>Сотрудник подразделения</td>
+<td>Сведения о клиенте сохранены и связаны с заявками.</td>
+</tr>
+<tr>
+<td>3.1.5</td>
+<td>Просмотр и поиск заявок</td>
+<td>Система должна обеспечивать поиск и фильтрацию заявок по номеру, клиенту, статусу, срокам, исполнителю.</td>
+<td>Сотрудник / Руководитель / Бухгалтерия</td>
+<td>Получен список заявок по заданным критериям.</td>
+</tr>
+<tr>
+<td>3.1.6</td>
+<td>Назначение исполнителя</td>
+<td>Система должна обеспечивать передачу заявки исполнителю с фиксацией ответственного и срока выполнения.</td>
+<td>Сотрудник подразделения / Руководитель</td>
+<td>Исполнитель назначен; срок установлен; статус обновлен.</td>
+</tr>
+<tr>
+<td>3.1.7</td>
+<td>Изменение статуса заявки</td>
+<td>Система должна обеспечивать изменение статуса заявки по регламенту (Новая → В работе → Выполнена/Закрыта/Отменена).</td>
+<td>Сотрудник / Исполнитель / Руководитель</td>
+<td>Статус заявки изменен, изменение зафиксировано.</td>
+</tr>
+<tr>
+<td>3.1.8</td>
+<td>Ведение истории изменений</td>
+<td>Система должна фиксировать действия пользователей по заявке (кто/когда/что изменил).</td>
+<td>Система (автоматически)</td>
+<td>История изменений сохранена и доступна для просмотра.</td>
+</tr>
+<tr>
+<td>3.1.9</td>
+<td>Комментарии и вложения по заявке</td>
+<td>Система должна позволять добавлять комментарии и прикреплять файлы (сканы, акты, переписку) к заявке.</td>
+<td>Сотрудник / Исполнитель</td>
+<td>Комментарий/файл сохранен и привязан к заявке.</td>
+</tr>
+<tr>
+<td>3.1.10</td>
+<td>Фиксация результата выполнения</td>
+<td>Система должна обеспечивать внесение результата выполнения заявки (описание работ, дата выполнения).</td>
+<td>Исполнитель</td>
+<td>Результат зафиксирован; заявка готова к закрытию.</td>
+</tr>
+<tr>
+<td>3.1.11</td>
+<td>Уведомление клиента о статусе</td>
+<td>Система должна обеспечивать отправку уведомления клиенту о принятии/изменении статуса/завершении заявки (по каналу).</td>
+<td>Сотрудник подразделения / Система</td>
+<td>Клиент уведомлен; факт уведомления зафиксирован.</td>
+</tr>
+<tr>
+<td>3.1.12</td>
+<td>Контроль сроков и просрочек</td>
+<td>Система должна контролировать сроки исполнения, выявлять просроченные заявки и формировать соответствующие списки.</td>
+<td>Руководитель / Сотрудник</td>
+<td>Выявлены просрочки; сформирован список контроля.</td>
+</tr>
+<tr>
+<td>3.1.13</td>
+<td>Формирование управленческой отчетности</td>
+<td>Система должна формировать отчеты: количество заявок, сроки, нагрузка исполнителей, доля просрочек, динамика.</td>
+<td>Руководитель</td>
+<td>Сформирован отчет за период в заданном виде.</td>
+</tr>
+<tr>
+<td>3.1.14</td>
+<td>Формирование финансовых данных по заявкам</td>
+<td>Система должна обеспечивать выгрузку/формирование данных для финансового учета (суммы, счета, акты — при наличии).</td>
+<td>Бухгалтерия</td>
+<td>Подготовлены данные/документы для учета и отчетности.</td>
+</tr>
+<tr>
+<td>3.1.15</td>
+<td>Экспорт отчетов</td>
+<td>Система должна обеспечивать экспорт отчетов в форматы PDF/Excel (или иной согласованный формат).</td>
+<td>Руководитель / Бухгалтерия</td>
+<td>Отчет выгружен в файл установленного формата.</td>
+</tr>
+<tr>
+<td>3.1.16</td>
+<td>Журналирование событий безопасности</td>
+<td>Система должна фиксировать входы, попытки входа, изменения прав, критические операции.</td>
+<td>Система (автоматически)</td>
+<td>Журнал событий безопасности сформирован и хранится.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="32">3.2. Формирование нефункциональных требований</h3>
+<p>Нефункциональные требования определяют <strong>какими качественными характеристиками должна обладать информационная система</strong> при реализации заданного функционала. В отличие от функциональных требований, они не описывают конкретные действия системы, а задают <strong>ограничения, показатели качества и критерии приемки</strong>, по которым оценивается работоспособность и пригодность решения к эксплуатации.</p>
+<p>Нефункциональные требования формулируются в <strong>измеримой форме</strong>, что позволяет использовать их при проведении испытаний и итоговой оценке соответствия системы установленным требованиям.</p>
+<hr>
+<h4 id="321">3.2.1. Производительность</h4>
+<table>
+<thead>
+<tr>
+<th>Показатель</th>
+<th>Требование</th>
+<th>Критерий измеримости</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Время отклика интерфейса</td>
+<td>Отображение основных экранов и списков заявок</td>
+<td>Не более 2 секунд при нормальной нагрузке</td>
+</tr>
+<tr>
+<td>Время сохранения заявки</td>
+<td>Сохранение новой или изменённой заявки</td>
+<td>Не более 1 секунды</td>
+</tr>
+<tr>
+<td>Формирование отчётов</td>
+<td>Генерация типовых отчётов за период</td>
+<td>Не более 5 секунд</td>
+</tr>
+<tr>
+<td>Одновременная работа пользователей</td>
+<td>Поддержка параллельной работы</td>
+<td>Не менее 20 пользователей без деградации</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="322">3.2.2. Надёжность</h4>
+<table>
+<thead>
+<tr>
+<th>Показатель</th>
+<th>Требование</th>
+<th>Критерий измеримости</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Доступность системы</td>
+<td>Обеспечение работоспособности</td>
+<td>Не менее 99 % времени в рабочие часы</td>
+</tr>
+<tr>
+<td>Сохранность данных</td>
+<td>Исключение потери данных при сбоях</td>
+<td>Отсутствие потери данных при аварийном завершении</td>
+</tr>
+<tr>
+<td>Восстановление после сбоя</td>
+<td>Восстановление работоспособности</td>
+<td>Не более 30 минут</td>
+</tr>
+<tr>
+<td>Резервное копирование</td>
+<td>Создание резервных копий</td>
+<td>Не реже 1 раза в сутки</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="323">3.2.3. Удобство использования</h4>
+<table>
+<thead>
+<tr>
+<th>Показатель</th>
+<th>Требование</th>
+<th>Критерий измеримости</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Освоение системы</td>
+<td>Возможность начала работы без обучения</td>
+<td>Освоение базовых функций ≤ 30 минут</td>
+</tr>
+<tr>
+<td>Навигация</td>
+<td>Логичная структура интерфейса</td>
+<td>Доступ к любой функции ≤ 3 клика</td>
+</tr>
+<tr>
+<td>Понятность форм</td>
+<td>Минимизация ошибок ввода</td>
+<td>Не более 5 % ошибок при вводе данных</td>
+</tr>
+<tr>
+<td>Подсказки и сообщения</td>
+<td>Информирование пользователя</td>
+<td>Понятные сообщения об ошибках и действиях</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="324">3.2.4. Масштабируемость</h4>
+<table>
+<thead>
+<tr>
+<th>Показатель</th>
+<th>Требование</th>
+<th>Критерий измеримости</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Рост количества заявок</td>
+<td>Поддержка увеличения объёма данных</td>
+<td>Увеличение объёма данных без изменения логики</td>
+</tr>
+<tr>
+<td>Рост числа пользователей</td>
+<td>Поддержка расширения состава пользователей</td>
+<td>Увеличение числа пользователей минимум в 2 раза</td>
+</tr>
+<tr>
+<td>Расширение функционала</td>
+<td>Возможность добавления новых функций</td>
+<td>Добавление модулей без переработки ядра</td>
+</tr>
+<tr>
+<td>Интеграция новых ролей</td>
+<td>Поддержка новых ролей пользователей</td>
+<td>Добавление роли без изменения существующих</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="325">3.2.5. Безопасность</h4>
+<table>
+<thead>
+<tr>
+<th>Показатель</th>
+<th>Требование</th>
+<th>Критерий измеримости</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Аутентификация</td>
+<td>Обязательная проверка пользователя</td>
+<td>100 % операций выполняются после входа</td>
+</tr>
+<tr>
+<td>Разграничение доступа</td>
+<td>Ролевой доступ к функциям и данным</td>
+<td>Отсутствие доступа вне назначенной роли</td>
+</tr>
+<tr>
+<td>Журналирование</td>
+<td>Фиксация действий пользователей</td>
+<td>100 % критичных операций логируются</td>
+</tr>
+<tr>
+<td>Защита данных</td>
+<td>Защита данных при хранении и передаче</td>
+<td>Использование защищённых каналов и хранилища</td>
+</tr>
+<tr>
+<td>Резервирование</td>
+<td>Защита от потери данных</td>
+<td>Наличие актуальной резервной копии</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="326">3.2.6. Совместимость</h4>
+<table>
+<thead>
+<tr>
+<th>Показатель</th>
+<th>Требование</th>
+<th>Критерий измеримости</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Поддержка ОС</td>
+<td>Работа в распространённых ОС</td>
+<td>Windows / Linux</td>
+</tr>
+<tr>
+<td>Поддержка браузеров</td>
+<td>Работа через веб-интерфейс</td>
+<td>Chrome, Edge, Firefox (актуальные версии)</td>
+</tr>
+<tr>
+<td>Форматы данных</td>
+<td>Экспорт и импорт данных</td>
+<td>PDF, Excel</td>
+</tr>
+<tr>
+<td>Интеграция</td>
+<td>Взаимодействие с внешними системами</td>
+<td>Обмен данными через API / файлы</td>
+</tr>
+<tr>
+<td>Аппаратные требования</td>
+<td>Работа на типовых рабочих местах</td>
+<td>Без необходимости специализированного оборудования</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.image.zoom", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../assets/js/mermaid-init.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

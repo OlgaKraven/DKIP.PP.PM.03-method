@@ -1,0 +1,1134 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../subject_area.html">
+      
+      
+        <link rel="next" href="processes.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Этап 1. Анализ предметной области - ПП.ПМ.03 Проектирование и разработка информационных систем</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../index.html" title="ПП.ПМ.03 Проектирование и разработка информационных систем" class="md-header__button md-logo" aria-label="ПП.ПМ.03 Проектирование и разработка информационных систем" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ПП.ПМ.03 Проектирование и разработка информационных систем
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Этап 1. Анализ предметной области
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="ПП.ПМ.03 Проектирование и разработка информационных систем" class="md-nav__button md-logo" aria-label="ПП.ПМ.03 Проектирование и разработка информационных систем" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    ПП.ПМ.03 Проектирование и разработка информационных систем
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../subject_area.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Предметная область
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Теория
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Теория
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Анализ предметной области
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="analysis.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Анализ предметной области
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Этап 1. Анализ предметной области
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Этап 1. Анализ предметной области">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Анализ предметной области
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1. Анализ предметной области">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.1. Общая характеристика деятельности
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1. Сфера деятельности
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.1. Основные направления работы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#141" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.1. Масштаб деятельности
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#151" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.1. Тип клиентов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#161" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.1. Ключевые продукты и услуги
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#171" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7.1. Акцент на процессы и данные
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8. Пример описания предметной области
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Анализ организационной структуры
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2. Анализ организационной структуры">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1. Уровни управления
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.2. Основные подразделения
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.3. Функции подразделений и их взаимодействие
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#124" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.4. Роли и подразделения (обобщённое описание)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#125" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.5. Схема организационной структуры
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="processes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Анализ процессов и выбор автоматизации
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="requirements.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Формирование требований к системе
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="design.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Проектирование системы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Проектирование
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Этап 1. Анализ предметной области
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Этап 1. Анализ предметной области">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Анализ предметной области
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1. Анализ предметной области">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.1. Общая характеристика деятельности
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1. Сфера деятельности
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.1. Основные направления работы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#141" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.1. Масштаб деятельности
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#151" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.1. Тип клиентов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#161" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.1. Ключевые продукты и услуги
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#171" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7.1. Акцент на процессы и данные
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8. Пример описания предметной области
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Анализ организационной структуры
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2. Анализ организационной структуры">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1. Уровни управления
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.2. Основные подразделения
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.3. Функции подразделений и их взаимодействие
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#124" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.4. Роли и подразделения (обобщённое описание)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#125" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.5. Схема организационной структуры
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">Теория</h1>
+<h2 id="1">Этап 1. Анализ предметной области</h2>
+<h3 id="11">1.1. Анализ предметной области</h3>
+<h4 id="111">1.1.1. Общая характеристика деятельности</h4>
+<p>Общая характеристика деятельности организации представляет собой описание предметной области, в рамках которой функционирует объект исследования. Цель данного раздела — зафиксировать контекст работы организации, определить ключевые процессы, участников и информационные потоки, которые в дальнейшем подлежат анализу и автоматизации. Данный подраздел формирует основу для выявления проблем и постановки требований к разрабатываемой информационной системе.</p>
+<h4 id="121">1.2.1. Сфера деятельности</h4>
+<p>Сфера деятельности определяет тип экономической или социальной активности организации. В зависимости от специфики объекта исследования организация может относиться к сфере торговли, услуг, производства, образования, государственного управления или их комбинации. Сфера деятельности влияет на структуру бизнес-процессов, требования к данным, нормативные ограничения и используемые информационные технологии. Например, для сферы услуг характерна ориентация на клиентов и учет заявок, для производства — управление ресурсами и технологическими операциями, для образования — учет контингента и образовательных программ.</p>
+<h4 id="131">1.3.1. Основные направления работы</h4>
+<p>Основные направления работы отражают совокупность ключевых функций, реализуемых организацией в рамках ее деятельности. Как правило, они включают операционную деятельность (оказание услуг, производство продукции, реализация товаров), управленческую деятельность (планирование, контроль, анализ), а также вспомогательные процессы (документооборот, учет, взаимодействие с внешними контрагентами). Для целей анализа важно выделить направления, связанные с обработкой информации и принятием решений, поскольку именно они являются потенциальными объектами автоматизации.</p>
+<h4 id="141">1.4.1. Масштаб деятельности</h4>
+<p>Масштаб деятельности характеризует объем и сложность функционирования организации и описывается качественно. Он может определяться численностью персонала, количеством обслуживаемых клиентов, частотой операций, территориальным охватом и интенсивностью документооборота. Масштаб напрямую влияет на требования к информационной системе, включая производительность, надежность хранения данных и необходимость распределенного доступа.</p>
+<h4 id="151">1.5.1. Тип клиентов</h4>
+<p>Тип клиентов определяет характер взаимодействия организации с внешней средой. В зависимости от направленности деятельности организация может работать в сегменте B2C (физические лица), B2B (юридические лица и организации) или государственного сектора. Тип клиентов влияет на структуру данных (карточки клиентов, договоры, заявки), требования к безопасности информации и регламентам обработки персональных данных.</p>
+<h4 id="161">1.6.1. Ключевые продукты и услуги</h4>
+<p>Ключевые продукты или услуги представляют собой основной результат деятельности организации, создающий ценность для клиентов. В рамках анализа предметной области важно определить, какие данные формируются и используются при оказании услуг или выпуске продукции: заказы, заявки, договоры, финансовые показатели, отчеты. Эти данные образуют информационное ядро будущей системы и используются в ключевых бизнес-процессах.</p>
+<hr>
+<h4 id="171">1.7.1. Акцент на процессы и данные</h4>
+<p>С точки зрения информационного моделирования деятельность организации может быть представлена как совокупность взаимосвязанных процессов, в рамках которых происходит сбор, обработка, хранение и передача данных. Каждый процесс оперирует определенными входными данными и формирует выходные результаты, используемые в последующих этапах деятельности или для управленческих решений. Такое представление позволяет формализовать предметную область и служит основой для проектирования архитектуры информационной системы.</p>
+<hr>
+<h4 id="18">1.8. Пример описания предметной области</h4>
+<figure>
+<pre class="mermaid"><code>flowchart TD
+    C[Клиент] --&gt;|Запрос / Заявка| P1[Основной процесс обслуживания]
+
+    P1 --&gt; D1[(Данные клиента)]
+    P1 --&gt; D2[(Заявки / Заказы)]
+
+    P1 --&gt;|Результат услуги| C
+
+    P1 --&gt; P2[Управленческий процесс]
+    P2 --&gt; D3[(Отчеты и аналитика)]
+
+    P2 --&gt;|Решения| P1</code></pre>
+<figcaption>
+<p>Рисунок 1 – Схематическое описание предметной области</p>
+</figcaption>
+</figure>
+<p><strong>Пояснение к рисунку 1:</strong></p>
+<ul>
+<li>клиент формирует запрос или заявку, которая инициирует основной процесс;</li>
+<li>в процессе обслуживания используются и формируются данные о клиентах и операциях;</li>
+<li>результаты деятельности возвращаются клиенту в виде услуги или продукта;</li>
+<li>управленческие процессы используют агрегированные данные для анализа и принятия решений, влияющих на основной процесс.</li>
+</ul>
+<hr>
+<h3 id="12">1.2. Анализ организационной структуры</h3>
+<p>Анализ организационной структуры направлен на изучение распределения управленческих функций, ролей и ответственности между подразделениями и должностными лицами организации. Данный анализ позволяет определить, каким образом осуществляется управление деятельностью, как принимаются решения и как организовано взаимодействие между структурными единицами. Полученные результаты используются для выявления узких мест в управлении и определения требований к информационной поддержке процессов.</p>
+<h4 id="121_1">1.2.1. Уровни управления</h4>
+<p>В организационной структуре, как правило, выделяются несколько уровней управления:</p>
+<ul>
+<li><strong>стратегический уровень</strong> — включает высшее руководство организации, ответственное за формирование целей, стратегий развития и принятие ключевых управленческих решений;</li>
+<li><strong>тактический уровень</strong> — представлен руководителями подразделений, обеспечивающими планирование, координацию и контроль деятельности;</li>
+<li><strong>операционный уровень</strong> — включает исполнителей, непосредственно участвующих в выполнении основных и вспомогательных процессов.</li>
+</ul>
+<p>Разделение на уровни управления позволяет обеспечить иерархию принятия решений и упорядочить информационные потоки внутри организации.</p>
+<h4 id="122">1.2.2. Основные подразделения</h4>
+<p>В зависимости от сферы деятельности организации в ее структуре могут быть выделены следующие типовые подразделения:</p>
+<ul>
+<li>руководство (дирекция, администрация);</li>
+<li>профильные подразделения, реализующие основную деятельность;</li>
+<li>вспомогательные службы (бухгалтерия, кадровая служба, ИТ-подразделение);</li>
+<li>подразделения контроля и анализа (планово-экономический отдел, служба качества).</li>
+</ul>
+<p>Каждое подразделение выполняет определённый набор функций и оперирует специфическими данными, необходимыми для выполнения своих задач.</p>
+<h4 id="123">1.2.3. Функции подразделений и их взаимодействие</h4>
+<p>Функции подразделений определяются их ролью в общей деятельности организации. Взаимодействие между подразделениями осуществляется посредством регламентированных процессов и обмена информацией: отчетов, заявок, служебных записок, электронных документов. Эффективность взаимодействия напрямую зависит от прозрачности распределения ответственности и доступности актуальных данных.</p>
+<p>С точки зрения автоматизации важно зафиксировать:</p>
+<ul>
+<li>какие данные формируются в каждом подразделении;</li>
+<li>какие данные передаются между подразделениями;</li>
+<li>какие решения принимаются на основе этих данных.</li>
+</ul>
+<hr>
+<h4 id="124">1.2.4. Роли и подразделения (обобщённое описание)</h4>
+<table>
+<thead>
+<tr>
+<th>Подразделение / роль</th>
+<th>Основные функции</th>
+<th>Используемые и формируемые данные</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Руководство</td>
+<td>Стратегическое управление, принятие решений</td>
+<td>Отчёты, аналитические данные</td>
+</tr>
+<tr>
+<td>Профильное подразделение</td>
+<td>Выполнение основной деятельности</td>
+<td>Заявки, заказы, результаты работ</td>
+</tr>
+<tr>
+<td>Бухгалтерия</td>
+<td>Финансовый учет и отчетность</td>
+<td>Платежи, счета, финансовые отчёты</td>
+</tr>
+<tr>
+<td>Кадровая служба</td>
+<td>Управление персоналом</td>
+<td>Личные данные, приказы</td>
+</tr>
+<tr>
+<td>ИТ-подразделение</td>
+<td>Поддержка информационных систем</td>
+<td>Техническая документация, журналы</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="125">1.2.5. Схема организационной структуры</h4>
+<figure>
+<pre class="mermaid"><code>flowchart TB
+    D[Руководство организации]
+
+    D --&gt; M1[Руководитель профильного подразделения]
+    D --&gt; M2[Бухгалтерия]
+    D --&gt; M3[Кадровая служба]
+    D --&gt; M4[ИТ-подразделение]
+
+    M1 --&gt; E1[Исполнители основной деятельности]
+
+    E1 --&gt;|Операционные данные| M1
+    M1 --&gt;|Отчёты| D
+
+    M2 --&gt;|Финансовая отчетность| D
+    M3 --&gt;|Кадровая информация| D
+    M4 --&gt;|Техническая информация| D</code></pre>
+<figcaption>
+<p>Рисунок 2 – Организационная структура организации</p>
+</figcaption>
+</figure>
+<p><strong>Пояснение к рисунку 2:</strong></p>
+<ul>
+<li>руководство осуществляет общее управление и получает агрегированную информацию от подразделений;</li>
+<li>профильное подразделение выполняет основную деятельность и формирует операционные данные;</li>
+<li>вспомогательные подразделения обеспечивают поддержку и передают специализированные данные руководству;</li>
+<li>взаимодействие между уровнями управления реализуется через информационные потоки.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.image.zoom", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../assets/js/mermaid-init.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
