@@ -1191,61 +1191,56 @@ erDiagram
 
 ```mermaid
 flowchart TB
-    %% Users
-    U1[Сотрудник подразделения]
-    U2[Исполнитель]
-    U3[Руководитель]
-    U4[Бухгалтерия]
-    C[Клиент (опционально)]
+  U1["Сотрудник подразделения"]
+  U2["Исполнитель"]
+  U3["Руководитель"]
+  U4["Бухгалтерия"]
+  C["Клиент - опционально"]
 
-    %% UI
-    UI[Веб-интерфейс / UI\n(Личный кабинет)]
-    PF[Публичная форма клиента\n(опционально)]
+  UI["Веб-интерфейс / UI<br/>Личный кабинет"]
+  PF["Публичная форма клиента<br/>опционально"]
 
-    %% API Layer
-    API[Сервер приложений / API\nБизнес-логика + RBAC + Валидация]
-    AUTH[Модуль аутентификации\nТокены/Сессии]
-    AUDIT[Журналирование и аудит\n(история действий)]
+  API["Сервер приложений / API<br/>Бизнес-логика + RBAC + Валидация"]
+  AUTH["Модуль аутентификации<br/>Токены / Сессии"]
+  AUDIT["Журналирование и аудит<br/>История действий"]
 
-    %% Data Layer
-    DB[(База данных\nClients/Requests/Status/Users/History)]
-    FS[(Файловое хранилище\nвложений)]
+  DB[("База данных<br/>Clients / Requests / Status / Users / History")]
+  FS[("Файловое хранилище<br/>Вложения")]
 
-    %% Integration Layer
-    NOTIF[Сервис уведомлений\nEmail/Мессенджер/СМС]
-    REPORT[Сервис отчетов\nPDF/Excel Export]
-    ACC[Учетная система/Бухгалтерия\n(опционально)]
+  NOTIF["Сервис уведомлений<br/>Email / Мессенджер / SMS"]
+  REPORT["Сервис отчетов<br/>PDF / Excel"]
+  ACC["Учетная система / Бухгалтерия<br/>опционально"]
 
-    %% Flows
-    U1 --> UI
-    U2 --> UI
-    U3 --> UI
-    U4 --> UI
-    C --> PF
+  U1 --> UI
+  U2 --> UI
+  U3 --> UI
+  U4 --> UI
+  C --> PF
 
-    UI -->|HTTPS| API
-    PF -->|HTTPS| API
+  UI -->|HTTPS| API
+  PF -->|HTTPS| API
 
-    API --> AUTH
-    API --> AUDIT
+  API --> AUTH
+  API --> AUDIT
 
-    API -->|SQL/ORM| DB
-    API -->|Upload/Download| FS
+  API -->|SQL / ORM| DB
+  API -->|Upload / Download| FS
 
-    API -->|TLS/API| NOTIF
-    API -->|Export| REPORT
-    API -->|TLS/API| ACC
+  API -->|TLS / API| NOTIF
+  API -->|Export| REPORT
+  API -->|TLS / API| ACC
 
-    %% Security notes as nodes
-    S1{{Точка безопасности:\nHTTPS + защита токенов}}
-    S2{{Точка безопасности:\nRBAC + валидация + rate limit}}
-    S3{{Точка безопасности:\nправа БД + backup + целостность}}
-    S4{{Точка безопасности:\nTLS + секреты API + минимизация ПДн}}
+  S1{{"HTTPS + защита токенов"}}
+  S2{{"RBAC + валидация + rate limit"}}
+  S3{{"Права БД + backup + целостность"}}
+  S4{{"TLS + секреты API + минимизация ПДн"}}
 
-    UI --- S1
-    API --- S2
-    DB --- S3
-    NOTIF --- S4
+  UI --- S1
+  API --- S2
+  DB --- S3
+  NOTIF --- S4
+
+
 ```
 
 ///caption
