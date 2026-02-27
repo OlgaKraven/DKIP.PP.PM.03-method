@@ -26,7 +26,11 @@ nav:
         - Этап 2. Анализ процессов и выбор автоматизации: theory/processes.md
         - Этап 3. Формирование требований к системе: theory/requirements.md
         - Этап 4. Проектирование системы: theory/design.md
-    - Проектирование: design.md
+    - Практика: 
+        - Этап 1. Анализ предметной области: practice/analysis.md
+        - Этап 2. Анализ процессов и выбор автоматизации: practice/processes.md
+        - Этап 3. Формирование требований к системе: practice/requirements.md
+        - Этап 4. Проектирование системы: practice/design.md
     # Добавьте свои разделы и страницы здесь
 
 markdown_extensions:
