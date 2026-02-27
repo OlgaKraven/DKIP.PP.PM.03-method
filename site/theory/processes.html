@@ -1,0 +1,2073 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="analysis.html">
+      
+      
+        <link rel="next" href="requirements.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Этап 2. Анализ процессов и выбор автоматизации - ПП.ПМ.03 Проектирование и разработка информационных систем</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../index.html" title="ПП.ПМ.03 Проектирование и разработка информационных систем" class="md-header__button md-logo" aria-label="ПП.ПМ.03 Проектирование и разработка информационных систем" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ПП.ПМ.03 Проектирование и разработка информационных систем
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Этап 2. Анализ процессов и выбор автоматизации
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="ПП.ПМ.03 Проектирование и разработка информационных систем" class="md-nav__button md-logo" aria-label="ПП.ПМ.03 Проектирование и разработка информационных систем" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    ПП.ПМ.03 Проектирование и разработка информационных систем
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../subject_area.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Предметная область
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Теория
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Теория
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="analysis.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Анализ предметной области
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Анализ процессов и выбор автоматизации
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="processes.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Анализ процессов и выбор автоматизации
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Этап 2. Анализ процессов и выбор автоматизации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Этап 2. Анализ процессов и выбор автоматизации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Описание ключевых процессов
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1. Описание ключевых процессов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.1. Классификация процессов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.2. Характеристика ключевых процессов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.3. Взаимосвязь ключевых процессов (Mermaid)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Выбор процесса для автоматизации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2. Выбор процесса для автоматизации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1. Обоснование выбора процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.2. Критерии выбора процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#223" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.3. Цели автоматизации процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#224" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.4. Место процесса в общей системе деятельности
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#225-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.5. Место процесса в системе (Mermaid)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Описание текущего выполнения процесса
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3. Описание текущего выполнения процесса">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-as-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1. Общая характеристика процесса (AS-IS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.2. Последовательность шагов процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.3. Участники процесса и роли
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#234" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4. Документы и данные процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#235" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.5. Проблемы и узкие места процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#236-bpmn-as-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.6. Модель текущего процесса (BPMN, AS-IS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. Анализ информационных потоков процесса
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4. Анализ информационных потоков процесса">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.1. Источники и получатели данных
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.2. Характеристика информационных потоков
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#243" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.3. Типы данных процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#244" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.4. Форматы хранения и передачи данных
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#245" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.5. Проблемы и риски информационных потоков
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#246" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.6. Возможности автоматизации информационных потоков
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#247-as-is-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.7. Схема информационных потоков (AS-IS, Mermaid)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5. Определение требований безопасности
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5. Определение требований безопасности">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.1. Категории информации
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#252" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.2. Возможные угрозы безопасности
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#253" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.3. Требования к доступу к информации
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#254" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.4. Требования к хранению и передаче данных
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#255" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.5. Требования к контролю и журналированию
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#256" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.6. Сводная таблица требований безопасности
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="requirements.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Формирование требований к системе
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="design.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Проектирование системы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Практика
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Практика
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice/analysis.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Анализ предметной области
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice/processes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Анализ процессов и выбор автоматизации
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice/requirements.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Формирование требований к системе
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice/design.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Проектирование системы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Этап 2. Анализ процессов и выбор автоматизации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Этап 2. Анализ процессов и выбор автоматизации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Описание ключевых процессов
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1. Описание ключевых процессов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.1. Классификация процессов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.2. Характеристика ключевых процессов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.3. Взаимосвязь ключевых процессов (Mermaid)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Выбор процесса для автоматизации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2. Выбор процесса для автоматизации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1. Обоснование выбора процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.2. Критерии выбора процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#223" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.3. Цели автоматизации процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#224" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.4. Место процесса в общей системе деятельности
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#225-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.5. Место процесса в системе (Mermaid)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Описание текущего выполнения процесса
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3. Описание текущего выполнения процесса">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-as-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1. Общая характеристика процесса (AS-IS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.2. Последовательность шагов процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.3. Участники процесса и роли
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#234" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4. Документы и данные процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#235" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.5. Проблемы и узкие места процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#236-bpmn-as-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.6. Модель текущего процесса (BPMN, AS-IS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. Анализ информационных потоков процесса
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4. Анализ информационных потоков процесса">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.1. Источники и получатели данных
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.2. Характеристика информационных потоков
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#243" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.3. Типы данных процесса
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#244" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.4. Форматы хранения и передачи данных
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#245" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.5. Проблемы и риски информационных потоков
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#246" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.6. Возможности автоматизации информационных потоков
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#247-as-is-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.7. Схема информационных потоков (AS-IS, Mermaid)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5. Определение требований безопасности
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5. Определение требований безопасности">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.1. Категории информации
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#252" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.2. Возможные угрозы безопасности
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#253" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.3. Требования к доступу к информации
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#254" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.4. Требования к хранению и передаче данных
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#255" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.5. Требования к контролю и журналированию
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#256" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.6. Сводная таблица требований безопасности
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">Теория</h1>
+<h2 id="2">Этап 2. Анализ процессов и выбор автоматизации</h2>
+<h3 id="21">2.1. Описание ключевых процессов</h3>
+<p>Описание ключевых процессов направлено на выявление и структурирование деятельности организации в виде совокупности взаимосвязанных процессов. Процессный подход позволяет рассматривать деятельность не как набор разрозненных функций, а как систему преобразования входных данных в результаты, создающие ценность для клиентов и обеспечивающие достижение целей организации. Данный анализ необходим для определения приоритетных объектов автоматизации и оптимизации.</p>
+<h4 id="211">2.1.1. Классификация процессов</h4>
+<p>В рамках анализа выделяются три основные группы процессов:</p>
+<ul>
+<li><strong>основные процессы</strong> — непосредственно направлены на создание продукта или оказание услуги и формируют основную ценность для клиента;</li>
+<li><strong>вспомогательные процессы</strong> — обеспечивают выполнение основных процессов ресурсами, информацией и инфраструктурой;</li>
+<li><strong>управляющие процессы</strong> — связаны с планированием, контролем, анализом и принятием управленческих решений.</li>
+</ul>
+<p>Такое разделение позволяет определить роль каждого процесса в деятельности организации и оценить его вклад в достижение результатов.</p>
+<hr>
+<h4 id="212">2.1.2. Характеристика ключевых процессов</h4>
+<table>
+<thead>
+<tr>
+<th>Процесс</th>
+<th>Тип процесса</th>
+<th>Входы</th>
+<th>Выходы</th>
+<th>Ответственные</th>
+<th>Значимость</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Обработка заявок / заказов</td>
+<td>Основной</td>
+<td>Запрос клиента, данные клиента</td>
+<td>Оказанная услуга / выполненный заказ</td>
+<td>Профильное подразделение</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Формирование отчетности</td>
+<td>Управляющий</td>
+<td>Операционные и финансовые данные</td>
+<td>Управленческие отчёты</td>
+<td>Руководство, бухгалтерия</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Финансовый учет</td>
+<td>Вспомогательный</td>
+<td>Первичные документы, данные операций</td>
+<td>Финансовые отчёты, платежи</td>
+<td>Бухгалтерия</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>Управление персоналом</td>
+<td>Вспомогательный</td>
+<td>Данные сотрудников, приказы</td>
+<td>Кадровые документы</td>
+<td>Кадровая служба</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>ИТ-поддержка</td>
+<td>Вспомогательный</td>
+<td>Запросы пользователей, системные данные</td>
+<td>Работоспособность ИС</td>
+<td>ИТ-подразделение</td>
+<td>Низкая–средняя</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Примечание:</strong>
+Значимость процессов определяется с точки зрения влияния на конечный результат деятельности и устойчивость функционирования организации.</p>
+<hr>
+<h4 id="213-mermaid">2.1.3. Взаимосвязь ключевых процессов (Mermaid)</h4>
+<figure>
+<pre class="mermaid"><code>flowchart LR
+    C[Клиент] --&gt;|Заявка| P1[Основной процесс]
+
+    P1 --&gt; D1[(Операционные данные)]
+    D1 --&gt; P2[Финансовый учет]
+    D1 --&gt; P3[Управление персоналом]
+
+    P2 --&gt; D2[(Финансовые отчеты)]
+    P3 --&gt; D3[(Кадровые данные)]
+
+    D2 --&gt; P4[Управляющий процесс]
+    D3 --&gt; P4
+
+    P4 --&gt;|Управленческие решения| P1
+    P1 --&gt;|Результат услуги| C</code></pre>
+<figcaption>
+<p>Рисунок 3 – Взаимосвязь ключевых процессов деятельности</p>
+</figcaption>
+</figure>
+<p><strong>Пояснение к рисунку 3:</strong></p>
+<ul>
+<li>основной процесс инициируется клиентом и формирует ключевые операционные данные;</li>
+<li>вспомогательные процессы используют операционные данные для учета и обеспечения;</li>
+<li>управляющий процесс агрегирует информацию и формирует решения;</li>
+<li>управленческие решения воздействуют на основной процесс, замыкая цикл управления.</li>
+</ul>
+<hr>
+<h3 id="22">2.2. Выбор процесса для автоматизации</h3>
+<p>Выбор процесса для автоматизации является ключевым этапом аналитической части выпускной квалификационной работы, поскольку от корректности данного выбора зависит эффективность разрабатываемой информационной системы. Для автоматизации целесообразно выбирать процесс, который оказывает существенное влияние на результаты деятельности организации, характеризуется высокой трудоёмкостью и связан с обработкой значительных объёмов данных.</p>
+<h4 id="221">2.2.1. Обоснование выбора процесса</h4>
+<p>В качестве процесса, подлежащего автоматизации, выбран <strong>процесс обработки заявок (заказов) клиентов</strong>. Данный процесс относится к основным процессам деятельности организации и непосредственно связан с оказанием услуг (выполнением работ) и взаимодействием с клиентами. Он инициируется внешними запросами и формирует первичные данные, которые в дальнейшем используются во вспомогательных и управляющих процессах.</p>
+<p>Процесс обработки заявок является сквозным и затрагивает несколько подразделений, что делает его критически важным для устойчивого функционирования организации и качества предоставляемых услуг.</p>
+<hr>
+<h4 id="222">2.2.2. Критерии выбора процесса</h4>
+<p>Выбор процесса для автоматизации обоснован следующими критериями:</p>
+<ul>
+<li>
+<p><strong>Высокая трудоёмкость</strong>
+  Процесс включает ручной ввод данных, регистрацию заявок, контроль статусов и подготовку отчетной информации, что требует значительных затрат рабочего времени сотрудников.</p>
+</li>
+<li>
+<p><strong>Вероятность ошибок</strong>
+  Ручная обработка заявок повышает риск допущения ошибок при вводе данных, потере информации и несогласованности сведений между подразделениями.</p>
+</li>
+<li>
+<p><strong>Большие объёмы данных</strong>
+  В рамках процесса обрабатываются данные о клиентах, заявках, сроках исполнения, результатах и связанных документах, объём которых увеличивается по мере роста деятельности организации.</p>
+</li>
+<li>
+<p><strong>Существенное влияние на результат деятельности</strong>
+  Качество и скорость обработки заявок напрямую влияют на удовлетворённость клиентов, репутацию организации и эффективность использования ресурсов.</p>
+</li>
+</ul>
+<hr>
+<h4 id="223">2.2.3. Цели автоматизации процесса</h4>
+<p>Целями автоматизации процесса обработки заявок являются:</p>
+<ul>
+<li>сокращение времени обработки заявок за счёт автоматизации регистрации и маршрутизации;</li>
+<li>снижение количества ошибок, связанных с ручным вводом и дублированием данных;</li>
+<li>обеспечение централизованного хранения и актуальности информации;</li>
+<li>повышение прозрачности процесса за счёт контроля статусов и сроков выполнения;</li>
+<li>формирование аналитической и управленческой отчётности в автоматическом режиме.</li>
+</ul>
+<p>Достижение указанных целей позволит повысить эффективность как основного процесса, так и связанных с ним вспомогательных и управляющих процессов.</p>
+<hr>
+<h4 id="224">2.2.4. Место процесса в общей системе деятельности</h4>
+<p>Процесс обработки заявок занимает центральное место в системе деятельности организации, так как он связывает внешнюю среду (клиентов) с внутренними подразделениями и является источником первичных данных для других процессов. Результаты данного процесса используются:</p>
+<ul>
+<li>бухгалтерией — для финансового учета и расчетов;</li>
+<li>руководством — для анализа показателей и принятия управленческих решений;</li>
+<li>вспомогательными подразделениями — для планирования ресурсов и обеспечения деятельности.</li>
+</ul>
+<p>Автоматизация данного процесса способствует повышению эффективности всей системы управления деятельностью организации.</p>
+<hr>
+<h4 id="225-mermaid">2.2.5. Место процесса в системе (Mermaid)</h4>
+<figure>
+<pre class="mermaid"><code>flowchart LR
+    C[Клиент] --&gt;|Заявка| P1[Процесс обработки заявок]
+
+    P1 --&gt; D1[(Единая база данных заявок)]
+
+    D1 --&gt; P2[Финансовый учет]
+    D1 --&gt; P3[Управленческий анализ]
+    D1 --&gt; P4[Планирование ресурсов]
+
+    P2 --&gt; R1[Финансовая отчетность]
+    P3 --&gt; R2[Управленческие решения]
+    P4 --&gt; R3[Планы и задания]
+
+    R2 --&gt;|Корректирующие действия| P1</code></pre>
+<figcaption>
+<p>Рисунок 4 – Место процесса обработки заявок в системе деятельности организации</p>
+</figcaption>
+</figure>
+<p><strong>Пояснение к рисунку 4:</strong></p>
+<ul>
+<li>процесс обработки заявок является источником первичных данных;</li>
+<li>данные используются во вспомогательных и управляющих процессах;</li>
+<li>управленческие решения формируют обратную связь и влияют на выполнение процесса.</li>
+</ul>
+<hr>
+<h3 id="23">2.3. Описание текущего выполнения процесса</h3>
+<h4 id="231-as-is">2.3.1. Общая характеристика процесса (AS-IS)</h4>
+<p>Процесс обработки заявок клиентов относится к основным процессам деятельности организации и реализуется с использованием разрозненных инструментов (электронная почта, таблицы, бумажные документы). Отсутствие единой информационной системы приводит к фрагментации данных и повышенной нагрузке на персонал.</p>
+<hr>
+<h4 id="232">2.3.2. Последовательность шагов процесса</h4>
+<p>Текущее выполнение процесса включает следующие этапы:</p>
+<ol>
+<li>Клиент направляет заявку по электронной почте, телефону или через мессенджер.</li>
+<li>Сотрудник профильного подразделения принимает заявку и вручную фиксирует её в журнале или таблице.</li>
+<li>Производится проверка корректности и полноты данных заявки.</li>
+<li>Заявка передается ответственному исполнителю.</li>
+<li>Исполнитель выполняет работы / оказывает услугу.</li>
+<li>Результаты выполнения фиксируются в отчетных документах.</li>
+<li>Информация о выполнении заявки передается руководству и, при необходимости, в бухгалтерию.</li>
+<li>Клиент уведомляется о завершении обработки заявки.</li>
+</ol>
+<hr>
+<h4 id="233">2.3.3. Участники процесса и роли</h4>
+<table>
+<thead>
+<tr>
+<th>Участник</th>
+<th>Роль в процессе</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Клиент</td>
+<td>Инициатор процесса, источник исходных данных</td>
+</tr>
+<tr>
+<td>Сотрудник профильного подразделения</td>
+<td>Приём и регистрация заявки</td>
+</tr>
+<tr>
+<td>Исполнитель</td>
+<td>Непосредственное выполнение работ</td>
+</tr>
+<tr>
+<td>Руководитель подразделения</td>
+<td>Контроль сроков и качества выполнения</td>
+</tr>
+<tr>
+<td>Бухгалтерия</td>
+<td>Финансовый учет и расчеты (при необходимости)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="234">2.3.4. Документы и данные процесса</h4>
+<p>В рамках текущего выполнения процесса используются следующие документы и данные:</p>
+<ul>
+<li>заявка клиента (письмо, сообщение, устное обращение);</li>
+<li>журнал регистрации заявок (Excel / бумажный носитель);</li>
+<li>карточка клиента;</li>
+<li>отчёт о выполнении заявки;</li>
+<li>финансовые документы (счета, акты).</li>
+</ul>
+<p>Данные хранятся в разрозненных источниках, не всегда синхронизированных между собой.</p>
+<hr>
+<h4 id="235">2.3.5. Проблемы и узкие места процесса</h4>
+<p>Анализ текущего выполнения процесса позволил выявить следующие проблемы:</p>
+<ul>
+<li><strong>дублирование ввода данных</strong> в различных документах и таблицах;</li>
+<li><strong>высокая вероятность ошибок</strong> при ручной регистрации заявок;</li>
+<li><strong>отсутствие прозрачности статусов</strong> выполнения заявок;</li>
+<li><strong>затруднённый контроль сроков</strong> исполнения;</li>
+<li><strong>разрозненное хранение данных</strong>, усложняющее формирование отчетности;</li>
+<li>зависимость процесса от человеческого фактора.</li>
+</ul>
+<p>Указанные узкие места обуславливают необходимость автоматизации процесса.</p>
+<hr>
+<h4 id="236-bpmn-as-is">2.3.6. Модель текущего процесса (BPMN, AS-IS)</h4>
+<figure>
+<pre class="mermaid"><code>flowchart LR
+    C[Клиент]
+    A[Сотрудник подразделения]
+    E[Исполнитель]
+    R[Руководитель]
+    B[Бухгалтерия]
+
+    C --&gt;|Заявка| A
+    A --&gt;|Регистрация заявки| A
+    A --&gt;|Передача заявки| E
+    E --&gt;|Выполнение работ| E
+    E --&gt;|Отчёт о выполнении| A
+    A --&gt;|Сводная информация| R
+    A --&gt;|Финансовые данные| B
+    A --&gt;|Уведомление| C</code></pre>
+<figcaption>
+<p>Рисунок 5 – Модель текущего выполнения процесса обработки заявок (AS-IS)</p>
+</figcaption>
+</figure>
+<p><strong>Пояснение к рисунку 5:</strong></p>
+<ul>
+<li>процесс инициируется клиентом;</li>
+<li>регистрация и контроль выполняются вручную сотрудником подразделения;</li>
+<li>данные передаются между участниками без единой информационной среды;</li>
+<li>контроль и учет выполняются постфактум.</li>
+</ul>
+<hr>
+<h3 id="24">2.4. Анализ информационных потоков процесса</h3>
+<p>Анализ информационных потоков направлен на выявление источников и получателей данных, характеристик передаваемой информации, а также проблем, возникающих при её обработке и передаче. Данный анализ позволяет оценить степень формализованности процесса и определить потенциал его автоматизации.</p>
+<h4 id="241">2.4.1. Источники и получатели данных</h4>
+<p>В рамках текущего выполнения процесса обработки заявок формируются и используются следующие информационные потоки:</p>
+<ul>
+<li><strong>внешние источники данных</strong> — клиенты, инициирующие процесс;</li>
+<li><strong>внутренние источники данных</strong> — сотрудники и подразделения, участвующие в обработке заявок;</li>
+<li><strong>получатели данных</strong> — подразделения, использующие информацию для выполнения своих функций и принятия решений.</li>
+</ul>
+<hr>
+<h4 id="242">2.4.2. Характеристика информационных потоков</h4>
+<table>
+<thead>
+<tr>
+<th>Источник данных</th>
+<th>Получатель данных</th>
+<th>Тип данных</th>
+<th>Формат хранения / передачи</th>
+<th>Проблемы и риски</th>
+<th>Возможности автоматизации</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Клиент</td>
+<td>Сотрудник подразделения</td>
+<td>Заявка, контактные данные</td>
+<td>Email, мессенджер, устно</td>
+<td>Потеря заявок, неполные данные</td>
+<td>Веб-форма, единый канал ввода</td>
+</tr>
+<tr>
+<td>Сотрудник подразделения</td>
+<td>Журнал заявок</td>
+<td>Регистрационные данные</td>
+<td>Excel, бумажный журнал</td>
+<td>Дублирование, ошибки ввода</td>
+<td>Централизованная БД</td>
+</tr>
+<tr>
+<td>Журнал заявок</td>
+<td>Исполнитель</td>
+<td>Данные заявки</td>
+<td>Таблица, устная передача</td>
+<td>Неактуальные статусы</td>
+<td>Автоматическая маршрутизация</td>
+</tr>
+<tr>
+<td>Исполнитель</td>
+<td>Сотрудник подразделения</td>
+<td>Отчёт о выполнении</td>
+<td>Текстовый файл, устно</td>
+<td>Несвоевременная фиксация</td>
+<td>Электронные отчёты в системе</td>
+</tr>
+<tr>
+<td>Сотрудник подразделения</td>
+<td>Руководство</td>
+<td>Сводные данные</td>
+<td>Excel, PDF</td>
+<td>Трудоёмкость подготовки</td>
+<td>Автоматическая отчетность</td>
+</tr>
+<tr>
+<td>Сотрудник подразделения</td>
+<td>Бухгалтерия</td>
+<td>Финансовые данные</td>
+<td>Email, документы</td>
+<td>Несогласованность данных</td>
+<td>Интеграция с учётной системой</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="243">2.4.3. Типы данных процесса</h4>
+<p>В процессе обработки заявок используются следующие основные типы данных:</p>
+<ul>
+<li><strong>справочные данные</strong> — информация о клиентах, исполнителях, услугах;</li>
+<li><strong>операционные данные</strong> — заявки, статусы выполнения, сроки;</li>
+<li><strong>отчётные данные</strong> — сводные таблицы, аналитические показатели;</li>
+<li><strong>финансовые данные</strong> — суммы, счета, акты выполненных работ.</li>
+</ul>
+<p>Разнородность типов данных усложняет их согласованное использование без автоматизированной поддержки.</p>
+<hr>
+<h4 id="244">2.4.4. Форматы хранения и передачи данных</h4>
+<p>В текущем состоянии используются разрозненные форматы хранения и передачи информации:</p>
+<ul>
+<li>электронная почта и мессенджеры;</li>
+<li>таблицы Excel;</li>
+<li>текстовые документы;</li>
+<li>бумажные носители.</li>
+</ul>
+<p>Отсутствие единого формата и централизованного хранилища приводит к несогласованности данных и затрудняет контроль их актуальности.</p>
+<hr>
+<h4 id="245">2.4.5. Проблемы и риски информационных потоков</h4>
+<p>В результате анализа выявлены следующие проблемы и риски:</p>
+<ul>
+<li>отсутствие единого источника достоверных данных;</li>
+<li>высокая вероятность потери или искажения информации;</li>
+<li>дублирование данных в различных источниках;</li>
+<li>низкая оперативность получения информации;</li>
+<li>сложность формирования аналитической и управленческой отчетности;</li>
+<li>зависимость от человеческого фактора.</li>
+</ul>
+<hr>
+<h4 id="246">2.4.6. Возможности автоматизации информационных потоков</h4>
+<p>Автоматизация процесса обработки заявок позволяет:</p>
+<ul>
+<li>централизовать ввод и хранение данных в единой базе;</li>
+<li>стандартизировать форматы данных и документы;</li>
+<li>обеспечить автоматическую передачу информации между участниками процесса;</li>
+<li>снизить количество ошибок и дублирующих операций;</li>
+<li>реализовать контроль статусов и сроков выполнения;</li>
+<li>обеспечить формирование отчетности в реальном времени.</li>
+</ul>
+<hr>
+<h4 id="247-as-is-mermaid">2.4.7. Схема информационных потоков (AS-IS, Mermaid)</h4>
+<figure>
+<pre class="mermaid"><code>flowchart LR
+    C[Клиент]
+    S[Сотрудник подразделения]
+    E[Исполнитель]
+    R[Руководство]
+    B[Бухгалтерия]
+
+    C --&gt;|Заявка, контакты| S
+    S --&gt;|Регистрация| J[(Журнал заявок)]
+    J --&gt;|Данные заявки| E
+    E --&gt;|Отчёт| S
+    S --&gt;|Сводные данные| R
+    S --&gt;|Финансовые данные| B</code></pre>
+<figcaption>
+<p>Рисунок 6 – Схема информационных потоков процесса обработки заявок (AS-IS)</p>
+</figcaption>
+</figure>
+<p><strong>Пояснение к рисунку 6:</strong></p>
+<ul>
+<li>информационные потоки распределены между несколькими участниками;</li>
+<li>данные передаются в различных форматах и каналах;</li>
+<li>отсутствует единое централизованное хранилище данных.</li>
+</ul>
+<hr>
+<h3 id="25">2.5. Определение требований безопасности</h3>
+<p>Цель определения требований безопасности — установить меры защиты информации, обрабатываемой в рамках автоматизируемого процесса, с учётом её ценности, критичности и возможных угроз. Требования безопасности направлены на обеспечение конфиденциальности, целостности и доступности данных, а также на снижение рисков несанкционированного доступа и искажения информации.</p>
+<h4 id="251">2.5.1. Категории информации</h4>
+<p>В процессе обработки заявок используются различные категории информации, отличающиеся по уровню критичности и требованиям к защите:</p>
+<table>
+<thead>
+<tr>
+<th>Категория информации</th>
+<th>Описание</th>
+<th>Уровень критичности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Персональные данные</td>
+<td>ФИО, контактные данные клиентов и сотрудников</td>
+<td>Высокий</td>
+</tr>
+<tr>
+<td>Операционные данные</td>
+<td>Заявки, статусы, сроки выполнения</td>
+<td>Высокий</td>
+</tr>
+<tr>
+<td>Финансовые данные</td>
+<td>Счета, суммы, акты</td>
+<td>Высокий</td>
+</tr>
+<tr>
+<td>Управленческая информация</td>
+<td>Отчёты, аналитические показатели</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>Справочная информация</td>
+<td>Перечни услуг, регламенты</td>
+<td>Низкий</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="252">2.5.2. Возможные угрозы безопасности</h4>
+<p>При анализе текущего состояния процесса выявлены следующие потенциальные угрозы:</p>
+<ul>
+<li>несанкционированный доступ к персональным и финансовым данным;</li>
+<li>утечка информации при передаче данных по незащищённым каналам;</li>
+<li>искажение или удаление данных вследствие ошибок пользователей;</li>
+<li>потеря данных при сбоях оборудования или программного обеспечения;</li>
+<li>отсутствие фиксации действий пользователей и невозможность аудита.</li>
+</ul>
+<hr>
+<h4 id="253">2.5.3. Требования к доступу к информации</h4>
+<p>Для обеспечения разграничения прав доступа в информационной системе должны быть реализованы следующие требования:</p>
+<ul>
+<li>доступ к данным предоставляется <strong>на основе ролей пользователей</strong> (руководитель, сотрудник, исполнитель, бухгалтер и др.);</li>
+<li>каждому пользователю назначается минимально необходимый уровень прав (принцип минимальных привилегий);</li>
+<li>доступ к персональным и финансовым данным ограничивается уполномоченными лицами;</li>
+<li>обязательная аутентификация пользователей при входе в систему;</li>
+<li>запрет несанкционированного изменения и удаления данных.</li>
+</ul>
+<hr>
+<h4 id="254">2.5.4. Требования к хранению и передаче данных</h4>
+<p>В целях защиты информации при хранении и передаче должны быть выполнены следующие требования:</p>
+<ul>
+<li>централизованное хранение данных в единой базе данных;</li>
+<li>защита базы данных от незащищённого доступа;</li>
+<li>резервное копирование данных на регулярной основе;</li>
+<li>использование защищённых каналов передачи данных;</li>
+<li>исключение передачи критичной информации в открытом виде (по незащищённой электронной почте, мессенджерам).</li>
+</ul>
+<hr>
+<h4 id="255">2.5.5. Требования к контролю и журналированию</h4>
+<p>Для обеспечения контроля действий пользователей и последующего анализа инцидентов информационной безопасности система должна обеспечивать:</p>
+<ul>
+<li>ведение журналов регистрации входа пользователей в систему;</li>
+<li>фиксацию операций создания, изменения и удаления данных;</li>
+<li>хранение журналов в защищённом виде;</li>
+<li>возможность анализа журналов ответственными лицами;</li>
+<li>выявление несанкционированных и аномальных действий.</li>
+</ul>
+<hr>
+<h4 id="256">2.5.6. Сводная таблица требований безопасности</h4>
+<table>
+<thead>
+<tr>
+<th>Объект защиты</th>
+<th>Угрозы</th>
+<th>Требования безопасности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Персональные данные</td>
+<td>Утечка, несанкционированный доступ</td>
+<td>Ролевой доступ, защищённое хранение</td>
+</tr>
+<tr>
+<td>Операционные данные</td>
+<td>Искажение, удаление</td>
+<td>Контроль прав, резервное копирование</td>
+</tr>
+<tr>
+<td>Финансовые данные</td>
+<td>Подмена, утрата</td>
+<td>Ограниченный доступ, журналирование</td>
+</tr>
+<tr>
+<td>Управленческие отчёты</td>
+<td>Несанкционированное изменение</td>
+<td>Контроль доступа, аудит действий</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.image.zoom", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../assets/js/mermaid-init.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

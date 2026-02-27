@@ -1,0 +1,2599 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="requirements.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Этап 4. Проектирование системы - ПП.ПМ.03 Проектирование и разработка информационных систем</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../index.html" title="ПП.ПМ.03 Проектирование и разработка информационных систем" class="md-header__button md-logo" aria-label="ПП.ПМ.03 Проектирование и разработка информационных систем" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ПП.ПМ.03 Проектирование и разработка информационных систем
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Этап 4. Проектирование системы
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="ПП.ПМ.03 Проектирование и разработка информационных систем" class="md-nav__button md-logo" aria-label="ПП.ПМ.03 Проектирование и разработка информационных систем" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    ПП.ПМ.03 Проектирование и разработка информационных систем
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../subject_area.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Предметная область
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Теория
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Теория
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/analysis.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Анализ предметной области
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/processes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Анализ процессов и выбор автоматизации
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/requirements.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Формирование требований к системе
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/design.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Проектирование системы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Практика
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Практика
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="analysis.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Анализ предметной области
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="processes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Анализ процессов и выбор автоматизации
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="requirements.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Формирование требований к системе
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Проектирование системы
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="design.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Проектирование системы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Этап 4. Проектирование решения
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Что требуется выполнить в данном пункте
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Что требуется выполнить в данном пункте">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проектирование данных (4.2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проектирование архитектуры системы (4.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проектирование модулей системы (4.4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Важно
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Выбор стратегии автоматизации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1. Выбор стратегии автоматизации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.1. Собственная разработка
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.2. Готовое решение
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#413-saas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.3. Облачный сервис (SaaS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#414" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.4. Комбинированный вариант
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#415" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.5. Сравнительная таблица вариантов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#416" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.6. Выбор оптимальной стратегии
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. Проектирование данных
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2. Проектирование данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.1. Сущности и связи (адаптация под клинику)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-er-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.2. ER-диаграмма (Mermaid) — клиническая версия
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#423-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.3. Нормализация до 3НФ (на примере клиники)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#424" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.4. Описание структуры таблиц (краткая спецификация)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2.4. Описание структуры таблиц (краткая спецификация)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ORDER (Заказ услуг)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#order_item" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ORDER_ITEM (Позиции заказа)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appointment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        APPOINTMENT (Запись)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. Проектирование архитектуры системы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3. Проектирование архитектуры системы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#431" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.1. Уровни системы (для клиники)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#432" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.2. Взаимодействие компонентов (типовой сценарий)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#433" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.3. Точки безопасности (медицинский контекст)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#434-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.4. Архитектурная схема системы (Mermaid) — клиника
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4. Проектирование модулей системы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4. Проектирование модулей системы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#441" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.1. Перечень программных модулей (для клиники)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#442" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.2. Описание модулей (назначение, вход/выход, связи)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#443-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.3. Взаимодействие модулей (Mermaid) — клиника
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#444" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.4. Примечание по трассировке требований (как в методичке)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Этап 4. Проектирование решения
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Что требуется выполнить в данном пункте
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Что требуется выполнить в данном пункте">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проектирование данных (4.2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проектирование архитектуры системы (4.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проектирование модулей системы (4.4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Важно
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Выбор стратегии автоматизации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1. Выбор стратегии автоматизации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.1. Собственная разработка
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.2. Готовое решение
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#413-saas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.3. Облачный сервис (SaaS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#414" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.4. Комбинированный вариант
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#415" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.5. Сравнительная таблица вариантов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#416" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.6. Выбор оптимальной стратегии
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. Проектирование данных
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2. Проектирование данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.1. Сущности и связи (адаптация под клинику)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-er-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.2. ER-диаграмма (Mermaid) — клиническая версия
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#423-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.3. Нормализация до 3НФ (на примере клиники)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#424" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.4. Описание структуры таблиц (краткая спецификация)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2.4. Описание структуры таблиц (краткая спецификация)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ORDER (Заказ услуг)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#order_item" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ORDER_ITEM (Позиции заказа)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appointment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        APPOINTMENT (Запись)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. Проектирование архитектуры системы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3. Проектирование архитектуры системы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#431" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.1. Уровни системы (для клиники)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#432" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.2. Взаимодействие компонентов (типовой сценарий)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#433" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.3. Точки безопасности (медицинский контекст)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#434-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.4. Архитектурная схема системы (Mermaid) — клиника
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4. Проектирование модулей системы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4. Проектирование модулей системы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#441" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.1. Перечень программных модулей (для клиники)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#442" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.2. Описание модулей (назначение, вход/выход, связи)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#443-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.3. Взаимодействие модулей (Mermaid) — клиника
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#444" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.4. Примечание по трассировке требований (как в методичке)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">Практика</h1>
+<hr>
+<h2 id="4">Этап 4. Проектирование решения</h2>
+<p><strong>Тема:</strong> Информационная система автоматизации процесса записи пациента и обработки заказов услуг в сети диагностических центров «МедДиагностика+».</p>
+<hr>
+<h2 id="_2">Что требуется выполнить в данном пункте</h2>
+<p>В рамках Этапа 4 «Проектирование решения» студент обязан:</p>
+<ol>
+<li>
+<p><strong>Выбрать стратегию автоматизации</strong> для выбранного процесса (из Этапа 2) и описать рассматриваемые варианты:</p>
+</li>
+<li>
+<p>собственная разработка;</p>
+</li>
+<li>готовое решение;</li>
+<li>облачный сервис;</li>
+<li>
+<p>комбинированный вариант.</p>
+</li>
+<li>
+<p>Для <strong>каждого варианта стратегии</strong> (п. 4.1.1–4.1.4) указать:</p>
+</li>
+<li>
+<p>краткое описание применительно к своей организации;</p>
+</li>
+<li>
+<p><strong>плюсы</strong> и <strong>минусы</strong> (не менее 4–5 пунктов каждого вида).</p>
+</li>
+<li>
+<p><strong>Составить сравнительную таблицу вариантов</strong> (как в п. 4.1.5), где сравнить минимум по критериям:</p>
+</li>
+<li>
+<p>гибкость;</p>
+</li>
+<li>срок внедрения;</li>
+<li>контроль над данными;</li>
+<li>стоимость владения;</li>
+<li>
+<p>риски.</p>
+</li>
+<li>
+<p><strong>Обосновать выбор оптимальной стратегии</strong> (п. 4.1.6), указав:</p>
+</li>
+<li>
+<p>почему выбранный подход лучше подходит к требованиям организации;</p>
+</li>
+<li>какие риски он снижает;</li>
+<li>какие возможности расширения обеспечивает.</li>
+</ol>
+<hr>
+<h3 id="42">Проектирование данных (4.2)</h3>
+<ol>
+<li>
+<p><strong>Определить состав сущностей</strong> для автоматизации процесса (не менее 8–12 сущностей), включая:</p>
+</li>
+<li>
+<p>пользователей и роли;</p>
+</li>
+<li>клиента/контрагента;</li>
+<li>основной объект процесса (заявка/заказ/запись и т.п.);</li>
+<li>статусы;</li>
+<li>историю изменений/аудит;</li>
+<li>комментарии и вложения;</li>
+<li>справочники (услуги/типы/каналы и т.п.);</li>
+<li>
+<p>(опционально) уведомления и финансовые сущности.</p>
+</li>
+<li>
+<p><strong>Описать связи между сущностями</strong> (1→N, N→M при необходимости) и объяснить их смысл в рамках процесса.</p>
+</li>
+<li>
+<p><strong>Построить ER-диаграмму</strong> в формате <strong>Mermaid erDiagram</strong>, включающую:</p>
+</li>
+<li>
+<p>все основные сущности;</p>
+</li>
+<li>ключевые атрибуты;</li>
+<li>PK/FK;</li>
+<li>
+<p>основные связи.</p>
+</li>
+<li>
+<p><strong>Провести нормализацию модели данных до 3НФ</strong>, описав:</p>
+</li>
+<li>
+<p>какие повторяющиеся группы вынесены в отдельные таблицы (1НФ);</p>
+</li>
+<li>почему отсутствуют частичные зависимости (2НФ);</li>
+<li>
+<p>какие транзитивные зависимости устранены (3НФ).</p>
+</li>
+<li>
+<p><strong>Составить описание структуры таблиц</strong> (спецификацию) минимум для ключевых таблиц, указав:</p>
+</li>
+<li>
+<p>имя таблицы;</p>
+</li>
+<li>поля (тип данных);</li>
+<li>PK/FK/UQ (если применимо);</li>
+<li>назначение (что хранит поле).</li>
+</ol>
+<hr>
+<h3 id="43">Проектирование архитектуры системы (4.3)</h3>
+<ol>
+<li>
+<p><strong>Определить архитектурные уровни системы</strong>, минимум:</p>
+</li>
+<li>
+<p>UI (интерфейс);</p>
+</li>
+<li>сервер приложений / API;</li>
+<li>база данных;</li>
+<li>
+<p>интеграции (уведомления, экспорт, учетная система и т.п.).</p>
+</li>
+<li>
+<p><strong>Описать взаимодействие компонентов</strong> на сценарии (пример: создание заявки/заказа → назначение → смена статуса → фиксация результата), указав:</p>
+</li>
+<li>
+<p>какие запросы идут из UI в API;</p>
+</li>
+<li>какие операции выполняются в БД;</li>
+<li>где формируется аудит;</li>
+<li>
+<p>где вызываются внешние сервисы.</p>
+</li>
+<li>
+<p><strong>Зафиксировать точки безопасности</strong> по уровням:</p>
+</li>
+<li>
+<p>UI: HTTPS, защита токенов/сессий, базовые web-угрозы;</p>
+</li>
+<li>API: аутентификация, RBAC, валидация, журналирование критичных операций;</li>
+<li>БД: права доступа, целостность, резервное копирование;</li>
+<li>
+<p>интеграции: TLS, хранение ключей, минимизация передачи критичных данных.</p>
+</li>
+<li>
+<p><strong>Построить архитектурную схему</strong> в Mermaid (flowchart), показывающую:</p>
+</li>
+<li>
+<p>пользователей/клиентов;</p>
+</li>
+<li>UI;</li>
+<li>API и ключевые сервисы (auth/audit/report);</li>
+<li>БД и файловое хранилище;</li>
+<li>внешние интеграции.</li>
+</ol>
+<hr>
+<h3 id="44">Проектирование модулей системы (4.4)</h3>
+<ol>
+<li>
+<p><strong>Выделить программные модули</strong> (обычно 10–12) и перечислить их:</p>
+</li>
+<li>
+<p>RBAC/авторизация;</p>
+</li>
+<li>пользователи и роли;</li>
+<li>клиенты;</li>
+<li>основной объект процесса (заявки/заказы);</li>
+<li>статусы/маршрутизация;</li>
+<li>комментарии;</li>
+<li>вложения;</li>
+<li>аудит/история изменений;</li>
+<li>отчётность;</li>
+<li>уведомления;</li>
+<li>администрирование/настройки;</li>
+<li>
+<p>интеграции (опционально).</p>
+</li>
+<li>
+<p><strong>Описать каждый модуль</strong> в таблице:</p>
+</li>
+<li>
+<p>назначение;</p>
+</li>
+<li>входные данные;</li>
+<li>выходные данные;</li>
+<li>
+<p>связи с другими модулями.</p>
+</li>
+<li>
+<p><strong>Построить схему взаимодействия модулей</strong> (Mermaid), где видно:</p>
+</li>
+<li>
+<p>какие модули вызываются из UI;</p>
+</li>
+<li>какие модули опираются на RBAC;</li>
+<li>как модуль основного процесса связан с аудитом, вложениями, уведомлениями;</li>
+<li>
+<p>где используются БД и файловое хранилище.</p>
+</li>
+<li>
+<p><strong>Сделать краткую трассировку</strong> (примечание), что:</p>
+</li>
+<li>
+<p>модули покрывают функциональные требования Этапа 3;</p>
+</li>
+<li>модули безопасности/аудита обеспечивают нефункциональные требования.</li>
+</ol>
+<p>Объём раздела должен быть достаточным для перехода к реализации: подготовке DDL БД, проектированию API, макетов UI и плану разработки.</p>
+<hr>
+<h2 id="_3">Важно</h2>
+<p>Приведённый пример (для сети диагностических центров) является <strong>образцом выполнения Этапа 4</strong>.</p>
+<p>Данный пример:</p>
+<ul>
+<li>демонстрирует структуру изложения раздела 4 (стратегия → данные → архитектура → модули);</li>
+<li>показывает, как обосновывать стратегию автоматизации и связывать её с требованиями;</li>
+<li>иллюстрирует, какие сущности и связи должны быть отражены в ER-модели;</li>
+<li>содержит примеры Mermaid-схем (ER, архитектура, взаимодействие модулей).</li>
+</ul>
+<p>Студент обязан:</p>
+<ul>
+<li>выполнить Этап 4 для <strong>своей предметной области</strong> и выбранного процесса;</li>
+<li>сохранить структуру подпунктов 4.1–4.4;</li>
+<li>спроектировать <strong>свою</strong> модель данных (сущности, связи, нормализация), а не копировать пример;</li>
+<li>построить <strong>свои</strong> схемы (ER, архитектура, модули), отражающие участников и данные своего кейса;</li>
+<li>обосновать решения с учетом требований безопасности, масштабируемости и эксплуатации.</li>
+</ul>
+<hr>
+<h2 id="41">4.1. Выбор стратегии автоматизации</h2>
+<p>Выбор стратегии автоматизации определяет, <strong>как именно будет создана и внедрена система</strong>: собственная разработка, готовое решение, облачный сервис или комбинированный вариант. Для медицинской предметной области критично учитывать:</p>
+<ul>
+<li>требования к защите персональных и медицинских данных;</li>
+<li>необходимость точного контроля статусов и сроков;</li>
+<li>возможность интеграции с кассой/бухгалтерией и сервисами уведомлений;</li>
+<li>масштабирование на несколько филиалов.</li>
+</ul>
+<hr>
+<h3 id="411">4.1.1. Собственная разработка</h3>
+<p><strong>Описание варианта (для клиники)</strong>
+Система разрабатывается с нуля под процессы клиники: карточка пациента, запись, заказ услуг, результаты, платежи, отчеты, аудит.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>максимальная адаптация под логику клиники (слоты, длительность процедур, кабинеты, оборудование);</li>
+<li>контроль над хранением медицинских данных (локально/в частном контуре);</li>
+<li>точная реализация RBAC и журналирования (аудит медицинских данных);</li>
+<li>поэтапное развитие (добавление лаборатории, интеграции, чек-ап пакеты).</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>высокие сроки и стоимость разработки;</li>
+<li>необходимость команды (аналитик, backend, frontend, DevOps, тестирование);</li>
+<li>ответственность за поддержку 24/7 и обновления безопасности.</li>
+</ul>
+<hr>
+<h3 id="412">4.1.2. Готовое решение</h3>
+<p><strong>Описание варианта (для клиники)</strong>
+Использование CRM/ServiceDesk/системы учета клиентов и заявок, адаптированной под запись и статусы.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>быстрый старт (можно начать с регистрации заказов);</li>
+<li>базовый функционал из коробки (клиенты, задачи, статусы).</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>медицинские процессы (врачебные заключения, протоколы, ограничение доступа к медданным) часто плохо ложатся;</li>
+<li>сложно “натянуть” расписание по кабинетам/оборудованию;</li>
+<li>интеграции и доработки дороже и зависят от поставщика.</li>
+</ul>
+<hr>
+<h3 id="413-saas">4.1.3. Облачный сервис (SaaS)</h3>
+<p><strong>Описание варианта (для клиники)</strong>
+Использование облачной системы записи/заказов с web-доступом.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>быстрый запуск (дни/недели);</li>
+<li>обновления и бэкапы на стороне провайдера;</li>
+<li>масштабирование пользователей.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>зависимость от интернета;</li>
+<li>риски хранения медицинских данных у внешнего провайдера;</li>
+<li>ограничение в кастомизации под филиальную модель и аудит.</li>
+</ul>
+<hr>
+<h3 id="414">4.1.4. Комбинированный вариант</h3>
+<p><strong>Описание варианта (рекомендуемый для клиники)</strong>
+Критичные данные и ядро (пациент, заказ, результаты, аудит) — <strong>внутри организации</strong>.
+Внешние сервисы — <strong>по необходимости</strong>: уведомления (SMS/email), экспорт отчетов, интеграция с учетной системой.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>контроль над медданными и критичными операциями;</li>
+<li>быстрый старт за счет готовых компонентов (уведомления/экспорт);</li>
+<li>гибкость в развитии и добавлении интеграций;</li>
+<li>снижение риска vendor lock-in (ядро остаётся у организации).</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>архитектура усложняется (интеграции, очереди, секреты);</li>
+<li>требуется аккуратное проектирование и сопровождение.</li>
+</ul>
+<hr>
+<h3 id="415">4.1.5. Сравнительная таблица вариантов</h3>
+<table>
+<thead>
+<tr>
+<th>Вариант</th>
+<th>Гибкость</th>
+<th>Срок внедрения</th>
+<th>Контроль над данными</th>
+<th>Стоимость владения</th>
+<th>Риски</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Собственная разработка</td>
+<td>Высокая</td>
+<td>Длительный</td>
+<td>Полный</td>
+<td>Высокая</td>
+<td>Средние</td>
+</tr>
+<tr>
+<td>Готовое решение</td>
+<td>Средняя</td>
+<td>Короткий</td>
+<td>Ограниченный</td>
+<td>Средняя</td>
+<td>Низкие–средние</td>
+</tr>
+<tr>
+<td>Облачный сервис</td>
+<td>Низкая–средняя</td>
+<td>Очень короткий</td>
+<td>Низкий</td>
+<td>Средняя</td>
+<td>Средние</td>
+</tr>
+<tr>
+<td>Комбинированный</td>
+<td>Высокая</td>
+<td>Средний</td>
+<td>Высокий</td>
+<td>Средняя</td>
+<td>Средние</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="416">4.1.6. Выбор оптимальной стратегии</h3>
+<p>Для «МедДиагностика+» оптимальна <strong>комбинированная стратегия</strong>, потому что:</p>
+<ul>
+<li>медицинские данные требуют <strong>контроля хранения, RBAC и аудита</strong>;</li>
+<li>ядро процесса (заказ/статусы/результат) должно быть полностью управляемым;</li>
+<li>уведомления (SMS/email) и экспорт (PDF/Excel) удобно вынести во внешние компоненты;</li>
+<li>систему нужно масштабировать на 3 филиала без потери управляемости.</li>
+</ul>
+<hr>
+<hr>
+<h2 id="42_1">4.2. Проектирование данных</h2>
+<p>Проектирование данных выполняется под автоматизируемый процесс: <strong>запись пациента и обработка заказа услуг</strong>. В отличие от “универсальных заявок”, в клинике появляются сущности: <strong>запись/слот</strong>, <strong>филиал</strong>, <strong>кабинет</strong>, <strong>услуга</strong>, <strong>медицинский результат</strong>.</p>
+<hr>
+<h3 id="421">4.2.1. Сущности и связи (адаптация под клинику)</h3>
+<p><strong>Базовые сущности:</strong></p>
+<ul>
+<li><strong>USER</strong> — сотрудник системы;</li>
+<li><strong>ROLE</strong> — роль доступа;</li>
+<li><strong>PATIENT</strong> — пациент (B2C) или представитель (в расширении);</li>
+<li><strong>ORGANIZATION</strong> — корпоративный клиент (B2B, опционально);</li>
+<li><strong>SERVICE</strong> — услуга/процедура;</li>
+<li><strong>ORDER</strong> — заказ услуг (аналог REQUEST);</li>
+<li><strong>ORDER_ITEM</strong> — состав заказа (несколько услуг в одном заказе);</li>
+<li><strong>APPOINTMENT</strong> — запись в расписании (дата/время/кабинет/врач);</li>
+<li><strong>ROOM</strong> — кабинет;</li>
+<li><strong>BRANCH</strong> — филиал;</li>
+<li><strong>ORDER_STATUS</strong> — статусы заказа;</li>
+<li><strong>RESULT</strong> — результат/заключение (для услуги/заказа);</li>
+<li><strong>COMMENT</strong>, <strong>ATTACHMENT</strong>, <strong>HISTORY</strong> — коммуникации/файлы/аудит;</li>
+<li><strong>PAYMENT</strong> — платежи/финансовые данные (минимально).</li>
+</ul>
+<p><strong>Ключевые связи:</strong></p>
+<ul>
+<li>ROLE 1→N USER</li>
+<li>PATIENT 1→N ORDER</li>
+<li>ORDER 1→N ORDER_ITEM</li>
+<li>SERVICE 1→N ORDER_ITEM</li>
+<li>ORDER 1→N APPOINTMENT</li>
+<li>USER(doctor) 1→N APPOINTMENT</li>
+<li>BRANCH 1→N ROOM, 1→N USER (опционально), 1→N APPOINTMENT</li>
+<li>ORDER_STATUS 1→N ORDER</li>
+<li>ORDER 1→N RESULT / или ORDER_ITEM 1→N RESULT (точнее)</li>
+<li>ORDER 1→N COMMENT / ATTACHMENT / HISTORY</li>
+<li>ORDER 1→N PAYMENT</li>
+</ul>
+<hr>
+<h3 id="422-er-mermaid">4.2.2. ER-диаграмма (Mermaid) — клиническая версия</h3>
+<figure>
+<pre class="mermaid"><code>erDiagram
+    ROLE ||--o{ USER : "назначает"
+    BRANCH ||--o{ ROOM : "имеет"
+    BRANCH ||--o{ APPOINTMENT : "проводит"
+    PATIENT ||--o{ ORDER : "создает"
+    ORDER_STATUS ||--o{ ORDER : "имеет"
+    ORDER ||--o{ ORDER_ITEM : "содержит"
+    SERVICE ||--o{ ORDER_ITEM : "входит"
+    USER ||--o{ APPOINTMENT : "врач"
+    ROOM ||--o{ APPOINTMENT : "кабинет"
+    ORDER ||--o{ APPOINTMENT : "планируется"
+    ORDER_ITEM ||--o{ RESULT : "результат"
+    ORDER ||--o{ ORDER_COMMENT : "комментируется"
+    ORDER ||--o{ ORDER_ATTACHMENT : "вложения"
+    ORDER ||--o{ ORDER_HISTORY : "аудит"
+    ORDER ||--o{ PAYMENT : "оплата"
+
+    ROLE {
+      int role_id PK
+      string name
+      string description
+    }
+
+    USER {
+      int user_id PK
+      int role_id FK
+      int branch_id FK
+      string login UQ
+      string password_hash
+      string full_name
+      string email
+      bool is_active
+      datetime created_at
+    }
+
+    BRANCH {
+      int branch_id PK
+      string name
+      string address
+      string phone
+      bool is_active
+    }
+
+    ROOM {
+      int room_id PK
+      int branch_id FK
+      string name
+      string room_type "uZi|lab|consult|mri|ct"
+      bool is_active
+    }
+
+    PATIENT {
+      int patient_id PK
+      string full_name
+      date birth_date
+      string phone
+      string email
+      string document_id
+      datetime created_at
+    }
+
+    ORDER_STATUS {
+      int status_id PK
+      string name UQ
+      int sort_order
+      bool is_final
+    }
+
+    SERVICE {
+      int service_id PK
+      string name
+      int duration_min
+      decimal price
+      bool is_active
+    }
+
+    ORDER {
+      int order_id PK
+      int patient_id FK
+      int status_id FK
+      int created_by_user_id FK
+      int branch_id FK
+      string channel "phone|site|desk"
+      int priority
+      datetime created_at
+      datetime due_at
+      datetime closed_at
+    }
+
+    ORDER_ITEM {
+      int item_id PK
+      int order_id FK
+      int service_id FK
+      int assigned_doctor_user_id FK
+      decimal price_snapshot
+      string item_status "planned|done|canceled"
+    }
+
+    APPOINTMENT {
+      int appointment_id PK
+      int order_id FK
+      int room_id FK
+      int doctor_user_id FK
+      datetime start_at
+      datetime end_at
+      string status "scheduled|arrived|in_service|done|no_show|canceled"
+    }
+
+    RESULT {
+      int result_id PK
+      int item_id FK
+      int author_user_id FK
+      string result_type "protocol|lab|conclusion"
+      text payload_text
+      datetime created_at
+      datetime signed_at
+    }
+
+    PAYMENT {
+      int payment_id PK
+      int order_id FK
+      decimal amount
+      string method "cash|card|online"
+      string status "pending|paid|refunded|failed"
+      datetime paid_at
+    }
+
+    ORDER_COMMENT {
+      int comment_id PK
+      int order_id FK
+      int author_user_id FK
+      text text
+      datetime created_at
+    }
+
+    ORDER_ATTACHMENT {
+      int attachment_id PK
+      int order_id FK
+      int uploaded_by_user_id FK
+      string file_name
+      string file_path
+      int file_size
+      datetime created_at
+    }
+
+    ORDER_HISTORY {
+      int history_id PK
+      int order_id FK
+      int changed_by_user_id FK
+      string change_type
+      string old_value
+      string new_value
+      datetime created_at
+    }</code></pre>
+<figcaption>
+<p>Рисунок 7 – ER-диаграмма данных ИС «МедДиагностика+»</p>
+</figcaption>
+</figure>
+<hr>
+<h3 id="423-3">4.2.3. Нормализация до 3НФ (на примере клиники)</h3>
+<p><strong>1НФ:</strong></p>
+<ul>
+<li>все атрибуты атомарны (телефон — отдельное поле, состав заказа не хранится “списком” в ORDER → вынесен в ORDER_ITEM);</li>
+<li>повторяющиеся группы вынесены в отдельные таблицы: комментарии, вложения, история, платежи.</li>
+</ul>
+<p><strong>2НФ:</strong></p>
+<ul>
+<li>отсутствуют частичные зависимости от составного ключа, т.к. ключи в сущностях — суррогатные (ID);</li>
+<li>состав заказа (ORDER_ITEM) имеет собственный PK и зависит от order_id полностью.</li>
+</ul>
+<p><strong>3НФ:</strong></p>
+<ul>
+<li>справочники вынесены отдельно: ROLE, ORDER_STATUS, SERVICE, BRANCH, ROOM;</li>
+<li>цены в заказе фиксируются снимком (price_snapshot) — это проектное решение для корректности финансовой истории;</li>
+<li>результаты вынесены в RESULT, не дублируются в ORDER.</li>
+</ul>
+<hr>
+<h3 id="424">4.2.4. Описание структуры таблиц (краткая спецификация)</h3>
+<p>Чтобы не перегружать, ниже — “ядро” (главные таблицы для процесса). Остальные — по вашему шаблону аналогично.</p>
+<h4 id="order">ORDER (Заказ услуг)</h4>
+<table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Ключ</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>order_id</td>
+<td>INT</td>
+<td>PK</td>
+<td>Идентификатор заказа</td>
+</tr>
+<tr>
+<td>patient_id</td>
+<td>INT</td>
+<td>FK</td>
+<td>Пациент</td>
+</tr>
+<tr>
+<td>status_id</td>
+<td>INT</td>
+<td>FK</td>
+<td>Статус заказа</td>
+</tr>
+<tr>
+<td>created_by_user_id</td>
+<td>INT</td>
+<td>FK</td>
+<td>Кто создал</td>
+</tr>
+<tr>
+<td>branch_id</td>
+<td>INT</td>
+<td>FK</td>
+<td>Филиал</td>
+</tr>
+<tr>
+<td>channel</td>
+<td>VARCHAR</td>
+<td></td>
+<td>Канал поступления</td>
+</tr>
+<tr>
+<td>priority</td>
+<td>INT</td>
+<td></td>
+<td>Приоритет</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td></td>
+<td>Создан</td>
+</tr>
+<tr>
+<td>due_at</td>
+<td>TIMESTAMP</td>
+<td></td>
+<td>Срок (SLA)</td>
+</tr>
+<tr>
+<td>closed_at</td>
+<td>TIMESTAMP</td>
+<td></td>
+<td>Закрыт</td>
+</tr>
+</tbody>
+</table>
+<h4 id="order_item">ORDER_ITEM (Позиции заказа)</h4>
+<table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Ключ</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>item_id</td>
+<td>INT</td>
+<td>PK</td>
+<td>Идентификатор позиции</td>
+</tr>
+<tr>
+<td>order_id</td>
+<td>INT</td>
+<td>FK</td>
+<td>Ссылка на заказ</td>
+</tr>
+<tr>
+<td>service_id</td>
+<td>INT</td>
+<td>FK</td>
+<td>Услуга</td>
+</tr>
+<tr>
+<td>assigned_doctor_user_id</td>
+<td>INT</td>
+<td>FK</td>
+<td>Назначенный врач</td>
+</tr>
+<tr>
+<td>price_snapshot</td>
+<td>DECIMAL</td>
+<td></td>
+<td>Цена на момент заказа</td>
+</tr>
+<tr>
+<td>item_status</td>
+<td>VARCHAR</td>
+<td></td>
+<td>Статус позиции</td>
+</tr>
+</tbody>
+</table>
+<h4 id="appointment">APPOINTMENT (Запись)</h4>
+<table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Ключ</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>appointment_id</td>
+<td>INT</td>
+<td>PK</td>
+<td>Идентификатор записи</td>
+</tr>
+<tr>
+<td>order_id</td>
+<td>INT</td>
+<td>FK</td>
+<td>Заказ</td>
+</tr>
+<tr>
+<td>room_id</td>
+<td>INT</td>
+<td>FK</td>
+<td>Кабинет</td>
+</tr>
+<tr>
+<td>doctor_user_id</td>
+<td>INT</td>
+<td>FK</td>
+<td>Врач</td>
+</tr>
+<tr>
+<td>start_at</td>
+<td>DATETIME</td>
+<td></td>
+<td>Начало</td>
+</tr>
+<tr>
+<td>end_at</td>
+<td>DATETIME</td>
+<td></td>
+<td>Конец</td>
+</tr>
+<tr>
+<td>status</td>
+<td>VARCHAR</td>
+<td></td>
+<td>Статус визита</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<hr>
+<h2 id="43_1">4.3. Проектирование архитектуры системы</h2>
+<p>Архитектура строится по принципу: <strong>UI → API → БД + интеграции</strong>, с акцентом на безопасность и аудит медицинских данных.</p>
+<hr>
+<h3 id="431">4.3.1. Уровни системы (для клиники)</h3>
+<ol>
+<li>
+<p><strong>Уровень представления (UI):</strong></p>
+</li>
+<li>
+<p>веб-панель для сотрудников (администратор, врач, касса, руководитель);</p>
+</li>
+<li>
+<p>опционально: публичная форма пациента (запрос/запись/проверка статуса).</p>
+</li>
+<li>
+<p><strong>Прикладной уровень (API):</strong></p>
+</li>
+<li>
+<p>бизнес-логика заказов, расписания, статусов, результатов;</p>
+</li>
+<li>
+<p>RBAC, аудит, SLA, уведомления, отчеты.</p>
+</li>
+<li>
+<p><strong>Уровень данных (БД):</strong></p>
+</li>
+<li>
+<p>хранение пациентов, заказов, записей, результатов, платежей;</p>
+</li>
+<li>
+<p>PK/FK, транзакции, ограничения, резервное копирование.</p>
+</li>
+<li>
+<p><strong>Интеграции:</strong></p>
+</li>
+<li>
+<p>SMS/e-mail уведомления;</p>
+</li>
+<li>экспорт PDF/Excel;</li>
+<li>интеграция с бухгалтерией (опционально);</li>
+<li>файловое хранилище вложений.</li>
+</ol>
+<hr>
+<h3 id="432">4.3.2. Взаимодействие компонентов (типовой сценарий)</h3>
+<p><strong>Сценарий: запись пациента и создание заказа</strong></p>
+<ol>
+<li>Администратор входит в систему (UI) → получает токен.</li>
+<li>Создает/находит пациента → сохраняет данные.</li>
+<li>Формирует заказ: выбирает услуги, филиал → система рассчитывает стоимость.</li>
+<li>Выбирает слот в расписании → система создает APPOINTMENT и назначает врача/кабинет.</li>
+<li>Система создает аудит-события (ORDER_HISTORY) и отправляет уведомление пациенту (SMS/email).</li>
+<li>Врач видит свою загрузку, по визиту формирует RESULT.</li>
+<li>Касса фиксирует PAYMENT и закрывает заказ.</li>
+</ol>
+<hr>
+<h3 id="433">4.3.3. Точки безопасности (медицинский контекст)</h3>
+<p><strong>UI:</strong></p>
+<ul>
+<li>HTTPS обязательно;</li>
+<li>защита токенов (httpOnly cookie или secure storage);</li>
+<li>ограничение интерфейса по роли (что видно и что доступно).</li>
+</ul>
+<p><strong>API:</strong></p>
+<ul>
+<li>JWT/сессии + RBAC;</li>
+<li>строгая валидация данных;</li>
+<li>аудит: запись “кто и когда смотрел/менял результат” (для медданных критично);</li>
+<li>rate limiting (если есть публичная форма).</li>
+</ul>
+<p><strong>DB:</strong></p>
+<ul>
+<li>отдельные учетные записи (минимальные привилегии);</li>
+<li>контроль целостности и транзакции;</li>
+<li>резервные копии и тест восстановления.</li>
+</ul>
+<p><strong>Интеграции:</strong></p>
+<ul>
+<li>TLS;</li>
+<li>хранение ключей в защищённой конфигурации;</li>
+<li>минимизация ПДн в уведомлениях (не отправлять диагнозы/результаты в тексте SMS).</li>
+</ul>
+<hr>
+<h3 id="434-mermaid">4.3.4. Архитектурная схема системы (Mermaid) — клиника</h3>
+<figure>
+<pre class="mermaid"><code>flowchart TB
+  subgraph USERS[Пользователи]
+    A[Администратор]
+    D[Врач/Лаборант]
+    K[Касса/Бухгалтерия]
+    M[Руководитель]
+    P[Пациент\n(опционально)]
+  end
+
+  subgraph UI[Уровень представления]
+    WEB[Веб-интерфейс сотрудников]
+    PUB[Публичная форма пациента\n(опционально)]
+  end
+
+  subgraph API[Сервер приложений]
+    GATE[API Gateway / Backend]
+    AUTH[Auth + RBAC]
+    ORD[Модуль заказов и позиций]
+    SCH[Модуль расписания (слоты/кабинеты)]
+    RES[Модуль результатов]
+    PAY[Модуль оплат]
+    REP[Модуль отчетности]
+    AUD[Аудит и журналирование]
+  end
+
+  subgraph DATA[Уровень данных]
+    DB[(База данных\nPatients/Orders/Appointments/Results/Payments)]
+    FS[(Файловое хранилище\nВложения)]
+  end
+
+  subgraph EXT[Интеграции]
+    NOTIF[Сервис уведомлений\nSMS/Email]
+    EXP[Экспорт PDF/Excel]
+    ACC[Учетная система\n(опционально)]
+  end
+
+  A --&gt; WEB
+  D --&gt; WEB
+  K --&gt; WEB
+  M --&gt; WEB
+  P --&gt; PUB
+
+  WEB --&gt;|HTTPS| GATE
+  PUB --&gt;|HTTPS| GATE
+
+  GATE --&gt; AUTH
+  GATE --&gt; ORD
+  GATE --&gt; SCH
+  GATE --&gt; RES
+  GATE --&gt; PAY
+  GATE --&gt; REP
+  GATE --&gt; AUD
+
+  ORD --&gt; DB
+  SCH --&gt; DB
+  RES --&gt; DB
+  PAY --&gt; DB
+  REP --&gt; DB
+  AUD --&gt; DB
+  GATE --&gt; FS
+
+  GATE --&gt;|TLS| NOTIF
+  REP --&gt; EXP
+  PAY --&gt; ACC
+
+  S1{{"HTTPS + токены"}}
+  S2{{"RBAC + аудит медданных"}}
+  S3{{"PK/FK + backup + restore"}}
+  S4{{"TLS + секреты API"}}
+
+  WEB --- S1
+  AUTH --- S2
+  DB --- S3
+  NOTIF --- S4</code></pre>
+<figcaption>
+<p>Рисунок 8 – Архитектурная схема ИС «МедДиагностика+»</p>
+</figcaption>
+</figure>
+<hr>
+<hr>
+<h2 id="44_1">4.4. Проектирование модулей системы</h2>
+<p>Модули проектируются так, чтобы покрыть требования Этапа 3 и обеспечить управляемую разработку.</p>
+<hr>
+<h3 id="441">4.4.1. Перечень программных модулей (для клиники)</h3>
+<ol>
+<li>Аутентификация и авторизация (RBAC)</li>
+<li>Управление пользователями и ролями</li>
+<li>Управление пациентами (карточки, поиск, дубль-контроль)</li>
+<li>Управление заказами (создание заказа, состав услуг)</li>
+<li>Управление расписанием (слоты, кабинеты, врачи)</li>
+<li>Управление статусами (заказ/визит/позиции) и SLA</li>
+<li>Результаты и протоколы (врачебные заключения, подпись)</li>
+<li>Комментарии и внутренние коммуникации</li>
+<li>Вложения и файловое хранилище</li>
+<li>Оплаты и финансовые документы (минимально)</li>
+<li>Аудит и журналирование (в т.ч. доступ к медданным)</li>
+<li>Отчетность и аналитика (загрузка, сроки, выручка)</li>
+<li>Уведомления (SMS/email)</li>
+<li>Администрирование и настройки (справочники: услуги, филиалы, кабинеты)</li>
+</ol>
+<hr>
+<h3 id="442">4.4.2. Описание модулей (назначение, вход/выход, связи)</h3>
+<table>
+<thead>
+<tr>
+<th>Модуль</th>
+<th>Назначение</th>
+<th>Входные данные</th>
+<th>Выходные данные</th>
+<th>Связи</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auth + RBAC</td>
+<td>Вход, токены, проверки прав</td>
+<td>логин/пароль, токен</td>
+<td>токен, результат авторизации</td>
+<td>UI, все модули</td>
+</tr>
+<tr>
+<td>Пользователи/роли</td>
+<td>учет сотрудников, назначение ролей</td>
+<td>данные сотрудника, роль</td>
+<td>карточка сотрудника</td>
+<td>RBAC, БД, аудит</td>
+</tr>
+<tr>
+<td>Пациенты</td>
+<td>карточка пациента, поиск, антидубли</td>
+<td>ФИО, контакты, дата рождения</td>
+<td>patient_id, карточка</td>
+<td>Заказы, аудит</td>
+</tr>
+<tr>
+<td>Заказы</td>
+<td>создание/редактирование заказа</td>
+<td>пациент, услуги, канал, сроки</td>
+<td>order_id, состав</td>
+<td>Статусы, оплаты, расписание</td>
+</tr>
+<tr>
+<td>Расписание</td>
+<td>слоты, кабинеты, назначение врача</td>
+<td>филиал, кабинет, врач, время</td>
+<td>appointment_id</td>
+<td>Заказы, аудит</td>
+</tr>
+<tr>
+<td>Статусы + SLA</td>
+<td>регламент переходов, просрочки</td>
+<td>текущий статус, правило</td>
+<td>новый статус, флаги SLA</td>
+<td>Заказы, отчеты</td>
+</tr>
+<tr>
+<td>Результаты</td>
+<td>протоколы/заключения/подпись</td>
+<td>текст/показатели, автор</td>
+<td>result_id, статус “готов”</td>
+<td>Заказы, аудит</td>
+</tr>
+<tr>
+<td>Комментарии</td>
+<td>коммуникации по заказу</td>
+<td>текст, автор</td>
+<td>лента комментариев</td>
+<td>Заказы, аудит</td>
+</tr>
+<tr>
+<td>Вложения</td>
+<td>загрузка/доступ к файлам</td>
+<td>файл, метаданные</td>
+<td>attachment_id</td>
+<td>Хранилище, RBAC</td>
+</tr>
+<tr>
+<td>Оплаты</td>
+<td>фиксация платежей/возвратов</td>
+<td>сумма, способ, статус</td>
+<td>payment_id, чек</td>
+<td>Заказы, отчетность</td>
+</tr>
+<tr>
+<td>Аудит</td>
+<td>журнал действий и доступа</td>
+<td>события модулей</td>
+<td>записи истории</td>
+<td>Все модули</td>
+</tr>
+<tr>
+<td>Отчетность</td>
+<td>отчеты KPI</td>
+<td>период, фильтры</td>
+<td>отчет, выгрузка</td>
+<td>БД, экспорт</td>
+</tr>
+<tr>
+<td>Уведомления</td>
+<td>SMS/email по событиям</td>
+<td>событие, шаблон</td>
+<td>статус отправки</td>
+<td>Заказы, аудит</td>
+</tr>
+<tr>
+<td>Администрирование</td>
+<td>справочники и настройки</td>
+<td>услуги, кабинеты, SLA</td>
+<td>актуальные справочники</td>
+<td>все модули</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="443-mermaid">4.4.3. Взаимодействие модулей (Mermaid) — клиника</h3>
+<figure>
+<pre class="mermaid"><code>flowchart LR
+    UI[UI сотрудников] --&gt; RBAC[Auth/RBAC]
+    UI --&gt; PAT[Пациенты]
+    UI --&gt; ORD[Заказы]
+    UI --&gt; SCH[Расписание]
+    UI --&gt; RES[Результаты]
+    UI --&gt; PAY[Оплаты]
+    UI --&gt; REP[Отчетность]
+
+    RBAC --&gt; USERS[Пользователи/Роли]
+    RBAC --&gt; PAT
+    RBAC --&gt; ORD
+    RBAC --&gt; SCH
+    RBAC --&gt; RES
+    RBAC --&gt; PAY
+    RBAC --&gt; ADM[Администрирование]
+
+    ORD --&gt; SLA[Статусы + SLA]
+    ORD --&gt; COM[Комментарии]
+    ORD --&gt; ATT[Вложения]
+    ORD --&gt; NOTIF[Уведомления]
+    ORD --&gt; AUD[Аудит]
+
+    SCH --&gt; AUD
+    RES --&gt; AUD
+    PAY --&gt; AUD
+    COM --&gt; AUD
+    ATT --&gt; FS[(Файловое хранилище)]
+    ATT --&gt; AUD
+
+    PAT --&gt; DB[(База данных)]
+    ORD --&gt; DB
+    SCH --&gt; DB
+    RES --&gt; DB
+    PAY --&gt; DB
+    SLA --&gt; DB
+    USERS --&gt; DB
+    AUD --&gt; DB
+    REP --&gt; DB
+
+    REP --&gt; EXP[Экспорт PDF/Excel]
+    NOTIF --&gt; EXT[SMS/Email сервис]</code></pre>
+<figcaption>
+<p>Рисунок 9 – Взаимодействие модулей ИС «МедДиагностика+»</p>
+</figcaption>
+</figure>
+<hr>
+<h3 id="444">4.4.4. Примечание по трассировке требований (как в методичке)</h3>
+<ul>
+<li>Модули <strong>Пациенты / Заказы / Расписание / Результаты / Оплаты / Статусы</strong> напрямую реализуют функциональные требования (создание, поиск, статусы, результат, контроль сроков).</li>
+<li>Модули <strong>RBAC / Аудит / Администрирование / Уведомления</strong> обеспечивают нефункциональные требования по безопасности, надежности и совместимости.</li>
+<li>Модуль <strong>Отчетность</strong> обеспечивает управленческий контур (KPI, загрузка, сроки, выручка).</li>
+</ul>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.image.zoom", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../assets/js/mermaid-init.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
