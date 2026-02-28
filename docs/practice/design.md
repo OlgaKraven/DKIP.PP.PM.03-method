@@ -1,6 +1,8 @@
 # Практика
 
- 
+>Внимание! Все схемы в примере являются схематичными, требуется учитывать нотации при создании отчета.  
+
+
 ## Этап 4. Проектирование решения
 
 **Тема:** Информационная система автоматизации процесса записи пациента и обработки заказов услуг в сети диагностических центров «МедДиагностика+».
@@ -354,7 +356,7 @@ erDiagram
       int user_id PK
       int role_id FK
       int branch_id FK
-      string login UQ
+      string login UK
       string password_hash
       string full_name
       string email
@@ -374,7 +376,7 @@ erDiagram
       int room_id PK
       int branch_id FK
       string name
-      string room_type "uZi|lab|consult|mri|ct"
+      string room_type "uzi|lab|consult|mri|ct"
       bool is_active
     }
 
@@ -390,7 +392,7 @@ erDiagram
 
     ORDER_STATUS {
       int status_id PK
-      string name UQ
+      string name UK
       int sort_order
       bool is_final
     }
@@ -639,19 +641,19 @@ flowchart TB
     D[Врач/Лаборант]
     K[Касса/Бухгалтерия]
     M[Руководитель]
-    P[Пациент\n(опционально)]
+    P[Пациент\n опционально ]
   end
 
   subgraph UI[Уровень представления]
     WEB[Веб-интерфейс сотрудников]
-    PUB[Публичная форма пациента\n(опционально)]
+    PUB[Публичная форма пациента\n опционально]
   end
 
   subgraph API[Сервер приложений]
     GATE[API Gateway / Backend]
     AUTH[Auth + RBAC]
     ORD[Модуль заказов и позиций]
-    SCH[Модуль расписания (слоты/кабинеты)]
+    SCH[Модуль расписания]
     RES[Модуль результатов]
     PAY[Модуль оплат]
     REP[Модуль отчетности]
@@ -659,14 +661,14 @@ flowchart TB
   end
 
   subgraph DATA[Уровень данных]
-    DB[(База данных\nPatients/Orders/Appointments/Results/Payments)]
-    FS[(Файловое хранилище\nВложения)]
+    DB[База данных\nPatients/Orders/Appointments/Results/Payments]
+    FS[Файловое хранилище\nВложения]
   end
 
   subgraph EXT[Интеграции]
     NOTIF[Сервис уведомлений\nSMS/Email]
     EXP[Экспорт PDF/Excel]
-    ACC[Учетная система\n(опционально)]
+    ACC[Учетная система\n опционально]
   end
 
   A --> WEB
@@ -793,10 +795,10 @@ flowchart LR
     RES --> AUD
     PAY --> AUD
     COM --> AUD
-    ATT --> FS[(Файловое хранилище)]
+    ATT --> FS[Файловое хранилище]
     ATT --> AUD
 
-    PAT --> DB[(База данных)]
+    PAT --> DB[База данных]
     ORD --> DB
     SCH --> DB
     RES --> DB
